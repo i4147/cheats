@@ -68,3 +68,9 @@ nc -u -l port
 nc -l local_port | nc hostname remote_port
 # Send a HTTP request:
 echo -e "GET / HTTP/1.1\nHost: hostname\n\n" | nc hostname 80
+# Start a [l]istener on the specified TCP [p]ort and send a file into it:
+nc < filename -l -p port
+# Scan the open TCP ports of a specified host:
+nc -v -z -w timeout_in_seconds host start_port-end_port
+# Start a [l]istener on the specified TCP [p]ort and provide your local shell access to the connected party (this is dangerous and can be abused):
+nc -l -p port -e shell_executable

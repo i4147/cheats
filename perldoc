@@ -3,3 +3,9 @@ perldoc -o man X11::Protocol
 # Infinitely-useful way in which to display information for a given function.
 # Also, thanks to `-T`, all output goes to STDOUT, instead of a pager.
 perldoc -Tf stat
+# Search in the [q]uestion headings of Perl FAQ:
+perldoc -q regex
+# Send output directly to `stdout` (by default, it is send to a pager):
+perldoc -T page
+# Specify the language code of the desired translation:
+perldoc -L language_code page

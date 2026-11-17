@@ -14,3 +14,5 @@ latexmk -f source.tex
 latexmk -c source.tex
 # Clean up all temporary TEX files in the current directory:
 latexmk -c
+# Open the document in a viewer and continuously update it whenever source files change:
+latexmk -pvc path/to/source.tex

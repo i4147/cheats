@@ -12,3 +12,6 @@ axel -n connections_num url
 axel -S mirrors_num url
 # Limit download speed (bytes per second):
 axel -s speed url
+# See also: `aria2c`.
+# Limit output to `stdout` and use a custom user-agent when downloading:
+axel --quiet --user-agent "Mozilla/5.0" url

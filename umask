@@ -17,3 +17,5 @@
 umask 0077
 # Akin to above, but instead, output the current umask setting.
 umask
+# Display the current mask in symbolic (human-readable) mode:
+umask -S

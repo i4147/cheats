@@ -5,3 +5,4 @@
 cargo verify-project
 # Check the correctness of the specified manifest file:
 cargo verify-project --manifest-path path/to/Cargo.toml
+# Note: This command is deprecated.

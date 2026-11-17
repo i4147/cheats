@@ -11,3 +11,13 @@ nest build project_name
 nest start project_name
 # Import a library into the current NestJS project:
 nest add library_name
+# Create a new NestJS project without prompting:
+nest n project_name --package-manager npm
+# Build the NestJS project in the current working directory:
+nest build
+# Run the NestJS project in the current working directory:
+nest start
+# Generate a new component:
+nest g module component_name
+# Display help:
+nest

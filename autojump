@@ -12,3 +12,6 @@ jo pattern
 j --purge
 # Show the entries in the autojump database:
 j -s
+# See also: `bashmarks`.
+# Add the `autojump` aliases to your shell:
+source /usr/share/autojump/autojump.bash

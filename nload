@@ -29,3 +29,5 @@ nload -o /var/log/nload.log
 nload
 # View network traffic on specific interfaces (use the arrow keys to switch interfaces):
 nload device interface_one interface_two
+# View network traffic on specific interfaces (use the `<ArrowKeys>` to switch interfaces):
+nload devices interface1 interface2 ...

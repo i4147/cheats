@@ -14,3 +14,5 @@ redis-cli redis_command
 redis-cli KEYS "prefix:*"
 # Delete Redis key abc
 redis-cli DEL abc
+# Connect to a remote server specifying a URI:
+redis-cli -u uri

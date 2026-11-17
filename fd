@@ -28,3 +28,6 @@ fd "string|regex" path/to/directory
 fd --hidden --no-ignore "string|regex"
 # Execute a command on each search result returned:
 fd "string|regex" --exec command
+# See also: `find`, `regex`.
+# Find files only in the current directory:
+fd "regex" --max-depth 1

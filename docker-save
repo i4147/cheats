@@ -9,3 +9,5 @@ docker save --output path/to/file.tar image:tag
 docker save --output path/to/file.tar image_name
 # Cherry-pick particular tags of an image to save:
 docker save --output path/to/file.tar image_name:tag1 image_name:tag2 ...
+# View documentation for the original command:
+tldr docker image save

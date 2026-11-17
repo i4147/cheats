@@ -46,3 +46,4 @@ doas -s
 doas -C config_file command
 # Make `doas` request a password even after it was supplied earlier:
 doas -L
+# See also: `sudo`, `pkexec`, `run0`.

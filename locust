@@ -13,3 +13,9 @@ locust --master --host=http://example.com
 locust --slave --host=http://example.com
 # Connect locust slave to master on a different machine:
 locust --slave --master-host=master_hostname --host=http://example.com
+# Run test without web interface, spawning 1 user a second until there are 100 users:
+locust --host http://example.com --headless --users 100 --spawn-rate 1
+# Connect Locust worker to master:
+locust --host http://example.com --worker
+# Connect Locust worker to master on a different machine:
+locust --host http://example.com --worker --master-host master_hostname

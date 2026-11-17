@@ -69,3 +69,5 @@ cargo build
 cargo +nightly build
 # Build using a specific number of threads (default is the number of CPU cores):
 cargo build --jobs number_of_threads
+# Create a new binary or library Rust project in the specified directory (or the current working directory by default):
+cargo init --bin path/to/directory

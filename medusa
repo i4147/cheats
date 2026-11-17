@@ -9,3 +9,7 @@ medusa -M HTTP -h host -u username -p password -m USER-AGENT:"Agent"
 medusa -M mysql -h host -U path/to/username_file -p hash -m PASS:HASH
 # Execute a brute force against a list of SMB servers using a username and a pwdump file:
 medusa -M smbnt -H path/to/hosts_file -C path/to/pwdump_file -u username -m PASS:HASH
+# List all installed modules:
+medusa -d
+# Show usage example of a specific module (use `medusa -d` for listing all installed modules):
+medusa -M ssh -q

@@ -5,3 +5,5 @@
 compare image1.png image2.png diff.png
 # Compare 2 images using a custom metric:
 compare -verbose -metric PSNR image1.png image2.png diff.png
+# View documentation for the original command:
+tldr magick compare

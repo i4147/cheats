@@ -17,3 +17,5 @@ docker run --publish host_port:container_port image command
 docker run --entrypoint command image
 # Run command in a new container connecting it to a network:
 docker run --network network image
+# View documentation for the original command:
+tldr docker container run

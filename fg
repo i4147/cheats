@@ -5,3 +5,4 @@
 fg
 # Bring a specific job to foreground:
 fg %job_id
+# See also: `jobs`, `bg`, `disown`, `%`.

@@ -8,3 +8,6 @@ git whatchanged
 git whatchanged --since="2 hours ago"
 # Display logs and changes for recent commits for specific files or directories:
 git whatchanged path/to/file_or_directory
+# Note: This command is deprecated and will be removed in the future.
+# View documentation for the original command:
+tldr git log

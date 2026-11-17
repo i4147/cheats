@@ -3,3 +3,10 @@
 # More information: <https://www.gnu.org/software/gettext/manual/html_node/gettext-Invocation.html>.
 # Get the translation of a string or output a default string if it doesn't exist:
 LANGUAGE=locale gettext msgid default_value
+# See also: `msgfmt`, `msgunfmt`.
+# Get the translation of a string as specified in the domain file (falls back to given `msgid` if no translation exists):
+LANGUAGE=locale gettext --domain domain "msgid"
+# Display help:
+gettext --help
+# Display version:
+gettext --version

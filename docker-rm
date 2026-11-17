@@ -9,3 +9,5 @@ docker rm [-f|--force] container1 container2 ...
 docker rm [-v|--volumes] container
 # Display help:
 docker rm [-h|--help]
+# View documentation for the original command:
+tldr docker container rm

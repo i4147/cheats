@@ -18,3 +18,7 @@ sngrep -d 5060
 sngrep -f 'host 192.168.1.20'
 # Display a different color scheme for terminal display
 sngrep --color 5
+# Display a real-time interface with only dialogs starting with INVITE packets, including RTP packets:
+sngrep -cr
+# Only capture packets without interface to a file:
+sngrep -NO path/to/file.pcap

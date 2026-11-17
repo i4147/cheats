@@ -10,3 +10,4 @@ docker image prune
 docker image prune --all
 # Show the history of a local Docker image:
 docker image history image
+# See also: `docker build`, `docker image pull`, `docker image rm`.

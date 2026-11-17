@@ -17,3 +17,4 @@ nix profile install nixpkgs#pkg1 nixpkgs#pkg2 nixpkgs#pkg3 ...
 nix store gc
 # Start an interactive environment for evaluating Nix expressions:
 nix repl
+# See also: `nix classic`.

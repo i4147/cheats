@@ -21,3 +21,6 @@ echo "This will never be printed"
 function func_name { echo "Function contents here"; }
 # Run a function named `func_name`:
 func_name
+# See also: `declare`, `unset`.
+# Display help:
+help function

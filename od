@@ -25,3 +25,4 @@ od --format=x1 --width=4 -v path/to/file
 od --format=xz --address-radix=n -v path/to/file
 # Read only 100 bytes of a file starting from the 500th byte:
 od --read-bytes 100 --skip-bytes=500 -v path/to/file
+# See also: `hexyl`, `xxd`, `hexdump`.

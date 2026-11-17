@@ -15,3 +15,5 @@ sudo iotop --pid=PID
 sudo iotop --user=user
 # Show accumulated I/O instead of bandwidth:
 sudo iotop --accumulated
+# Show I/O usage of given PID(s):
+sudo iotop --pid process_id

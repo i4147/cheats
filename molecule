@@ -11,3 +11,5 @@ molecule create
 molecule converge
 # Log in into the instance:
 molecule login
+# List scenarios of the instance:
+molecule matrix converge

@@ -41,3 +41,10 @@ sed -i -E "/^\s*$/d" FILE
 ifconfig | sed -E "/ether/ s/([0-9a-f]{2}:{0,1}){6}/00:00:00:00:00:00/g"
 # Rearrange order of %Y,%m,%d in `date`s output by matching groups of characters
 date '+%Y-%m-%d' | sed -E "s/([0-9]{4})-([0-9]{2})-([0-9]{2})/\3-\2-\1/"
+# See also: `awk`, `ed`.
+# Replace all `apple` (basic `regex`) occurrences with `mango` (basic `regex`) in all input lines and print the result to `stdout`:
+command | sed 's/apple/mango/g'
+# Execute a specific script [f]ile and print the result to `stdout`:
+command | sed -f path/to/script.sed
+# Print just a first line to `stdout`:
+command | sed -n '1p'

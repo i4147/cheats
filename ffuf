@@ -13,3 +13,11 @@ ffuf -w path/to/param_names.txt -u https://target/script.php?FUZZ=test_value -fs
 ffuf -w path/to/postdata.txt -X POST -d "username=admin\&password=FUZZ" -u https://target/login.php -fc 401
 # Discover subdomains using a subdomain list on a target website:
 ffuf -w subdomains.txt -u https://website.com -H "Host: FUZZ.website.com"
+# Enumerate directories using [c]olored output and a [w]ordlist specifying a target [u]RL:
+ffuf -c -w path/to/wordlist.txt -u https://example.com/FUZZ
+# Fuzz with specified [t]hreads (default: 40) and pro[x]ying the traffic and save [o]utput to a file:
+ffuf -o -w path/to/wordlist.txt -u https://example.com/FUZZ -t 500 -x http://127.0.0.1:8080
+# Fuzz multiple positions with multiple wordlists using different modes and [a]uto [c]alibration to reduce false positives:
+ffuf -w path/to/keys:KEY -w path/to/values:VALUE -mode pitchfork -u https://example.com/id?KEY=VALUE -ac
+# Proxy requests through a HTTP MITM pro[x]y (such as Burp Suite or `mitmproxy`):
+ffuf -w path/to/wordlist -x http://127.0.0.1:8080 -u https://example.com/FUZZ

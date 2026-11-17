@@ -15,3 +15,7 @@ gh repo list owner
 gh repo list owner --non-forks
 # List repositories with a specific primary coding language:
 gh repo list owner --language language_name
+# List only non-forks repositories and limit the number of repositories to list (default: 30):
+gh repo ls owner --source --limit limit
+# Sync the current local repository with its upstream:
+gh repo sync

@@ -11,3 +11,4 @@ cal --monday
 cal year
 # Display a calendar for a specific month and year:
 cal month year
+# See also: `gcal`.

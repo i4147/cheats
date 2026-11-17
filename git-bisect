@@ -12,3 +12,7 @@ git bisect reset
 git bisect skip
 # Display a log of what has been done so far:
 git bisect log
+# Automate the bisect process using a test script that `exit`s with 0 for "good" and non-zero for "bad":
+git bisect run path/to/test_script optional_script_arguments
+# Show remaining candidate commits to be checked:
+git bisect visualize

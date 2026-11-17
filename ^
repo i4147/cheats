@@ -10,3 +10,4 @@
 ^string1^string2^string3
 # Replace all occurrences of `string1`:
 ^string1^string2^:&
+# See also: `!`.

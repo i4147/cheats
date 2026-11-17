@@ -9,3 +9,8 @@ ls *.c | entr 'make && make test'
 ls *.rb | entr -r ruby main.rb
 # Run a command with the changed file (`/_`) as an argument:
 ls *.sql | entr psql -f /_
+# See also: `watchexec`.
+# [c]lear the screen and run a query after the SQL script is updated:
+echo my.sql | entr -cp psql -f /_
+# Rebuild the project if source files change, limiting output to the first few lines:
+find src/ | entr -s 'make'

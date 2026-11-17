@@ -11,3 +11,13 @@ cloudflared tunnel --hostname hostname localhost:port_number --no-tls-verify
 cloudflared tunnel --hostname hostname http://localhost:port_number --loglevel panic|fatal|error|warn|info|debug --logfile path/to/file
 # Install cloudflared as a system service:
 cloudflared service install
+# Create a tunnel with a specific name:
+cloudflared tunnel create name
+# Create a DNS CNAME record pointing to a tunnel:
+cloudflared tunnel route dns name hostname
+# Save logs to a file:
+cloudflared tunnel --loglevel panic --logfile path/to/file run name
+# Run a named tunnel (reads configuration from `config.yml`):
+cloudflared tunnel run name
+# Start a temporary tunnel to expose a local service (no account required):
+cloudflared tunnel --url http://localhost:port

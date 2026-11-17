@@ -15,3 +15,4 @@ dua interactive
 dua --format metric|binary|bytes|GB|GiB|MB|MiB
 # Set the number of threads to be used:
 dua --threads count
+# Dua (Disk Usage Analyzer): get the disk space usage of a directory.

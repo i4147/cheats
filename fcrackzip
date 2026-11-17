@@ -13,3 +13,7 @@ fcrackzip --brute-force --length 5 --charset 1 --init-password 12345 archive
 fcrackzip --use-unzip --dictionary --init-password wordlist archive
 # Benchmark cracking performance:
 fcrackzip --benchmark
+# Brute-force a password using lowercase letters within a length range:
+fcrackzip --brute-force --charset a --length min-max path/to/file.zip
+# Brute-force a password using lowercase letters and digits:
+fcrackzip --brute-force --charset a1 path/to/file.zip

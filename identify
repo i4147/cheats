@@ -15,3 +15,5 @@ identify path/to/image
 identify -verbose path/to/image
 # Collect dimensions of all JPEG files under current directory:
 identify -format "%f,%w,%h\n" *.jpg > path/to/filelist.csv
+# View documentation for the original command:
+tldr magick identify

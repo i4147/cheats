@@ -10,3 +10,4 @@ mosquitto_passwd -c path/to/password_file username
 mosquitto_passwd -D path/to/password_file username
 # Upgrade an old plain-text password file to a hashed password file:
 mosquitto_passwd -U path/to/password_file
+# See also: `mosquitto`.

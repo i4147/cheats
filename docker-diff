@@ -5,3 +5,5 @@
 docker diff container
 # Display help:
 docker diff --help
+# View documentation for the original command:
+tldr docker container diff

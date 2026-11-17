@@ -6,3 +6,4 @@
 atrm 10
 # Remove many jobs, separated by spaces:
 atrm 15 17 22
+# Note: To find job numbers use `atq`.

@@ -9,3 +9,9 @@ gofmt -w source.go
 gofmt -s -w source.go
 # Print all (including spurious) errors:
 gofmt -e source.go
+# Display diffs instead of rewriting files:
+gofmt -d path/to/source.go
+# List files that would be changed by gofmt:
+gofmt -l path/to/directory
+# Apply a rewrite rule to the source before reformatting (e.g. replace nil checks with `isNil` calls):
+gofmt -r 'x == nil -> isNil(x)' path/to/source.go

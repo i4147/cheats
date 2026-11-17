@@ -21,3 +21,15 @@ ZEROCONF='+zeroconf' make -j4 CXX='distcc g++'
 DISTCC_HOSTS='127.0.0.1 192.168.1.69' make -j4 CXX='distcc g++'
 # Show hosts aviables
 ZEROCONF='+zeroconf' distcc --show-hosts
+# Compile a source file using a compiler like `gcc`:
+distcc gcc -c path/to/source.c -o path/to/output.o
+# Set remote hosts to distribute compilation:
+export DISTCC_HOSTS="localhost ip1 ip2 ..."
+# Compile a project with `make` using `distcc`:
+make --jobs parallel_jobs CC="distcc gcc"
+# Show the list of current `distcc` hosts:
+distcc --show-hosts
+# Display help:
+distcc --help
+# Display version:
+distcc --version

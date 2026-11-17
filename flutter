@@ -17,3 +17,5 @@ flutter test test/example_test.dart
 flutter build apk --target-platform android-arm,android-arm64
 # Display help about a specific command:
 flutter help command
+# Delete the `build` and `.dart_tool` directories:
+flutter clean

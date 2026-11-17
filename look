@@ -13,3 +13,5 @@ look -f prefix file
 look prefix path/to/file
 # Look for lines ignoring case:
 look --ignore-case prefix path/to/file
+# Note: The lines in the file must be sorted.
+# See also: `grep`, `sort`.

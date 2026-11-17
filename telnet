@@ -16,3 +16,7 @@ quit (Type this command within the telnet session to exit)
 telnet set option (Enter this within the telnet command line to configure options)
 # Send special telnet sequence to the host
 send set_sequence_name (Enter this within a telnet session to send specific sequences such as break)
+# [Interactive] Exit a telnet session:
+quit
+# Emit the default escape character combination for terminating the session:
+<Ctrl ]>

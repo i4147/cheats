@@ -16,3 +16,4 @@ cargo rustdoc --bin name
 cargo rustdoc --example name
 # Document the specified integration test:
 cargo rustdoc --test name
+# See also: `rustdoc`.

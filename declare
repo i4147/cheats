@@ -13,3 +13,7 @@ declare -A variable=([key_a]=item_a [key_b]=item_b [key_c]=item_c)
 declare -r variable="value"
 # Declare a global variable within a function with the specified value:
 declare -g variable="value"
+# Print a function definition:
+declare -f function_name
+# Print a variable definition:
+declare -p variable_name

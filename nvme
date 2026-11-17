@@ -5,3 +5,5 @@
 sudo nvme list
 # Show device information:
 sudo nvme smart-log device
+# Secure erase user data on NVMe device:
+sudo nvme format --ses 1 --reset device

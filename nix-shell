@@ -14,3 +14,7 @@ nix-shell --packages package_name_1 package_name_2 ...
 nix-shell --packages package_name_1 package_name_2 ... -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/nixpkgs_revision.tar.gz
 # Evaluate rest of file in specific interpreter, for use in `#!-scripts` (see <https://nixos.org/manual/nix/stable/#use-as-a-interpreter>):
 nix-shell -i interpreter --packages package_name_1 package_name_2 ...
+# View documentation for the traditional shell before version 2.4 of Nix:
+tldr nix-shell.2
+# View documentation for nix3 shell:
+tldr nix shell.3

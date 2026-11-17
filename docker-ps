@@ -17,3 +17,5 @@ docker ps --all --filter="exited=code"
 docker ps --filter="status=status"
 # Filter containers that mount a specific volume or have a volume mounted in a specific path:
 docker ps --filter="volume=path/to/directory" --format "table .ID\t.Image\t.Names\t.Mounts"
+# View documentation for the original command:
+tldr docker container ls

@@ -10,3 +10,4 @@ ri File.directory?
 ri -i
 # Generate the missing ri docs for all your installed gems
 gem rdoc --all --ri --no-rdoc
+# See also: `ruby`.

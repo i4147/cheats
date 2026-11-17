@@ -19,3 +19,12 @@ ls | ruby -lne 'File.rename($_, $_.upcase)'
 echo "eats, shoots, and leaves" | ruby -pe '$_.gsub!("e", "a")'
 # BEGIN block executed before the loop.
 echo "foo\nbar\nbaz" | ruby -ne 'BEGIN { i = 1 }; puts "#{i} #{$_}"; i += 1'
+# See also: `gem`, `bundler`, `rake`, `irb`, `ri`.
+# Execute a single Ruby command in the command-line:
+ruby -e "command"
+# Check for syntax errors on a given Ruby script:
+ruby -c path/to/script.rb
+# Start the built-in HTTP server on port 8080 in the current directory:
+ruby -run -e httpd
+# Locally execute a Ruby binary without installing the required library it depends on:
+ruby -I path/to/library_folder -r library_require_name path/to/bin_folder/bin_name

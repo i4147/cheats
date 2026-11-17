@@ -17,3 +17,4 @@ clementine --previous
 clementine --load path/to/playlist.ext
 # Play the 5th track in the currently loaded playlist:
 clementine --play-track 5
+# See also: `audacious`, `qmmp`, `cmus`, `mpv`.

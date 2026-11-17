@@ -18,3 +18,14 @@ ping -4 hostname_or_IP_address
 ping -6 ipv6_address
 # Display the version of the ping command
 ping -V
+# See also: `mtr`.
+# Ping a host with IP `10.0.0.1` (Note: `10.0.0.1` can be shortened to `10.1`):
+ping 10.0.0.1
+# Ping host without trying to look up symbolic names for addresses:
+ping -n host
+# Ping host and ring the bell when a packet is received (if your terminal supports it):
+ping -a host
+# Also display a message if no response was received:
+ping -O host
+# Ping a host with specific [c]ount of pings, per-packet time to [W]ait for a response, and total [w]ait time limit of the entire ping run:
+ping -c count -W seconds -w seconds host

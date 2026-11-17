@@ -10,3 +10,4 @@ encfs --standard /path/to/cipher_dir /path/to/mount_point
 encfs -f /path/to/cipher_dir /path/to/mount_point
 # Mount an encrypted snapshot of a plain directory:
 encfs --reverse path/to/plain_dir path/to/cipher_dir
+# See also: `fusermount`.

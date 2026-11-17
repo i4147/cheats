@@ -8,3 +8,5 @@ mitmdump -w path/to/file
 mitmdump -nr input_filename -w output_filename "~m post"
 # Replay a saved traffic file:
 mitmdump -nc path/to/file
+# Intercept DNS traffic (starts an intercepting DNS server on 127.0.0.1:53):
+sudo mitmdump --mode dns

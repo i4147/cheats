@@ -12,3 +12,11 @@ standard --no-ignore
 standard --help
 # Explanation of the use case: Show the version of Standard being used.
 standard --version
+# Declare any available global variables:
+standard --global variable
+# Use a custom ESLint plugin when linting:
+standard --plugin plugin
+# Use a custom JS parser when linting:
+standard --parser parser
+# Use a custom ESLint environment when linting:
+standard --env environment

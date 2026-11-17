@@ -25,3 +25,4 @@ chown -R user path/to/directory
 chown -h user path/to/symlink
 # Change the owner of a file/directory to match a reference file:
 chown --reference=path/to/reference_file path/to/file_or_directory
+# See also: `chgrp`.

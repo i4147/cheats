@@ -28,3 +28,4 @@ bzip2 --verbose path/to/compressed_files.bz2
 bzip2 --force path/to/compressed_file.bz2
 # Display help:
 bzip2 -h
+# See also: `bzcat`, `bunzip2`, `bzip2recover`.

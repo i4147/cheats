@@ -14,3 +14,5 @@ fgrep -n search_string path/to/file
 fgrep -v search_string path/to/file
 # Display filenames whose content matches the search string at least once:
 fgrep -l search_string path/to/file1 path/to/file2
+# View documentation for the original command:
+tldr grep

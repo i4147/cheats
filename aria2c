@@ -30,3 +30,6 @@ aria2c --split=number_of_connections "url"
 aria2c --ftp-user=username --ftp-passwd=password "url"
 # Limit download speed in bytes/s:
 aria2c --max-download-limit=speed "url"
+# See also: `axel`.
+# Download the same file from different mirrors and verify the checksum of the downloaded file:
+aria2c --checksum sha-256=hash "url1" "url2" ...

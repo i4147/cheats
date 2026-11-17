@@ -100,3 +100,6 @@ venv*/
 venv.bak/
 venv/
 wheels/
+
+# Generated audit reports from tools/ cleanup scripts
+tools/*_report.json

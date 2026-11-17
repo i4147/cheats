@@ -13,3 +13,7 @@ git clean -f
 git clean -fd
 # Delete untracked files, including ignored files in `.gitignore` and `.git/info/exclude`:
 git clean -x
+# Delete only untracked files matching specific paths or `glob` patterns:
+git clean --force -- path/to/directory '*.ext'
+# Delete untracked files except those matching the given patterns:
+git clean --force --exclude '*.ext' --exclude path/to/directory/

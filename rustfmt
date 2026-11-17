@@ -16,3 +16,9 @@ rustfmt --quiet src/main.rs
 echo "fn main() { println!(\"Hello, world!\"); }" | rustfmt
 # Format a Rust file and list files with errors if any
 rustfmt --check --files-with-diff src/*.rs
+# Back up any modified files before formatting (the original file is renamed with a `.bk` extension):
+rustfmt --backup path/to/source.rs
+# Format code using a specific Rust style edition (formatting rules) verbosely:
+rustfmt --style-edition 2015 --verbose path/to/source1.rs path/to/source2.rs ...
+# Format code using a specific Rust edition (language features and parsing):
+rustfmt --edition 2015 path/to/source1.rs path/to/source2.rs ...

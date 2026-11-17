@@ -34,3 +34,7 @@ df path/to/file_or_directory
 df -i
 # Display filesystems but exclude the specified types:
 df -x squashfs -x tmpfs
+# Use [k]ibibyte (1024 byte) units when showing size figures:
+df -k
+# Display information in a portable way:
+df -P

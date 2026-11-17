@@ -28,3 +28,7 @@ pactl kill-client client-index
 pactl kill-sink-input sink-input-index
 # Display a sorted and uniq-ified list of PulseAudio modules, using AWK.
 pactl list modules short | awk '{!Lines[$2]++} END {asorti(Lines, Sorted); for (Line in Sorted) print(Sorted[Line])}'
+# Show information about the sound server:
+pactl info
+# Toggle mute on the default sink (using the special name `@DEFAULT_SINK@`):
+pactl set-sink-mute @DEFAULT_SINK@ toggle

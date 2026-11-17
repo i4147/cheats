@@ -29,3 +29,4 @@ tldr lp
 tldr lpstat
 # View documentation for cancelling print jobs:
 tldr lprm
+# Note: CUPS isn't a command, but a set of commands.

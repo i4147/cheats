@@ -17,3 +17,5 @@ carbon-now -s line path/to/file
 carbon-now -e line path/to/file
 # Open image in a browser instead of saving:
 carbon-now --open path/to/file
+# Create an image from `stdin` using default settings and copy to the clipboard:
+input | carbon-now --to-clipboard

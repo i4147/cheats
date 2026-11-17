@@ -20,3 +20,13 @@ python -m this
 #   list of pages:      /python/:list
 #   learn python:       /python/:learn
 #   search in pages:    /python/~keyword
+# Start a REPL (interactive shell):
+python
+# Execute a specific Python file and start a REPL:
+python -i path/to/file.py
+# Execute a Python expression:
+python -c "expression"
+# Install a package using `pip`:
+python -m pip install package
+# Interactively debug a Python script:
+python -m pdb path/to/file.py

@@ -6,3 +6,4 @@
 f3write path/to/mount_point
 # Limit the write speed:
 f3write --max-write-rate=kb_per_second path/to/mount_point
+# See also: `f3read`, `f3probe`, `f3fix`.

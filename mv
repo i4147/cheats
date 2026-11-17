@@ -30,3 +30,5 @@ mv -i source target
 mv -n source target
 # Move files in verbose mode, showing files after they are moved:
 mv -v source target
+# Specify target directory so that you can use external tools to gather movable files:
+find /var/log -type f -name '*.log' -print0 | xargs -0 mv --target-directory path/to/target_directory

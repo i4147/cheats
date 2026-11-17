@@ -102,3 +102,12 @@ tmux attach-session -t name
 # Sources:
 # https://gist.github.com/MohamedAlaa/2961058
 # https://gist.github.com/michaellihs/b6d46fa460fa5e429ea7ee5ff8794b96
+# See also: `zellij`, `screen`, `herdr`.
+# Detach from the current session (inside a tmux session):
+<Ctrl b><d>
+# Create a new window (inside a tmux session):
+<Ctrl b><c>
+# Switch between sessions and windows (inside a tmux session):
+<Ctrl b><w>
+# Kill a session by [t]arget name:
+tmux kill-session -t name

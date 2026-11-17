@@ -5,3 +5,7 @@
 in-toto-record start -n edit-files -k path/to/key_file -m .
 # Stop the record (expects a preliminary link file):
 in-toto-record stop -n edit-files -k path/to/key_file -p .
+# Start the record (creates a preliminary link file):
+in-toto-record start --step-name path/to/edit_file1 path/to/edit_file2 ... --signing-key path/to/key_file --materials .
+# Stop the record (expects a preliminary link file):
+in-toto-record stop --step-name path/to/edit_file1 path/to/edit_file2 ... --signing-key path/to/key_file --products .

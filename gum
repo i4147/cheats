@@ -13,3 +13,4 @@ gum spin --spinner dot|line|minidot|jump|pulse|points|globe|moon|monkey|meter|ha
 gum format -t emoji ":smile: :heart: hello"
 # Interactively prompt for multi-line text (CTRL + D to save) and write to `data.txt`:
 gum write > data.txt
+# See also: `whiptail`, `dialog`.

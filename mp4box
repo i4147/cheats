@@ -7,3 +7,4 @@ mp4box -info path/to/file
 mp4box -add input_subs.srt:lang=eng -add input.mp4 output.mp4
 # Combine audio from one file and video from another:
 mp4box -add input1.mp4#audio -add input2.mp4#video output.mp4
+# MPEG-4 Systems Toolbox: muxe streams into MP4 container.

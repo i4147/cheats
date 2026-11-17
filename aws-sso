@@ -11,3 +11,5 @@ aws sso list-accounts
 aws sso list-account-roles --account-id account --access-token token
 # Retrieve short-term credentials for a specific account:
 aws get-role-credentials --account-id account --role-name role --access-token token
+# List all AWS accounts accessible to the user:
+aws sso list-accounts --access-token token

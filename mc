@@ -6,3 +6,7 @@
 mc
 # Start `mc` in black and white:
 mc -b
+# View documentation for MinIO client:
+tldr mc.cli
+# View documentation for Midnight Commander:
+tldr mc.fm

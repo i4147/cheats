@@ -15,3 +15,5 @@ docker commit --message="comment" container image:tag
 docker commit --pause=false container image:tag
 # Display help:
 docker commit --help
+# View documentation for the original command:
+tldr docker container commit

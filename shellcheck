@@ -11,3 +11,5 @@ shellcheck --exclude SC1009,SC1073 file.sh
 # To disable some check, e.g. SC2034, for a statement in code
 # add comment with the following line
 # shellcheck disable=SC2034
+# List all available optional checks that are disabled by default:
+shellcheck --list-optional

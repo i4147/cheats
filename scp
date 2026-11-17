@@ -10,3 +10,11 @@ scp ALIAS1:PATH1 ALIAS2:PATH2
 # You can use the `-P` flag -- uppercase, unlike ssh(1) -- to determine the
 # PORT, in-case it's non-standard (not 22) or not defined within an alias.
 scp -P PORT ADDR:PATH ./
+# Recursively copy the contents of a directory from a remote host to a local directory:
+scp -r remote_host:path/to/remote_directory path/to/local_directory
+# Copy a file between two remote hosts transferring through the local host:
+scp -3 host1:path/to/remote_file host2:path/to/remote_directory
+# Use a specific SSH private key for authentication with the remote host:
+scp -i ~/.ssh/private_key path/to/local_file remote_host:path/to/remote_file
+# Use a specific proxy when connecting to the remote host:
+scp -J proxy_username@proxy_host path/to/local_file remote_host:path/to/remote_file

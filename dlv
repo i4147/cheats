@@ -13,3 +13,5 @@ dlv connect ip_address
 div attach pid
 # Compile and begin tracing a program:
 dlv trace package --regexp 'regular_expression'
+# Attach to a running process and begin debugging:
+dlv attach process_id

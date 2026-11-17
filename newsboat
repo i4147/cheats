@@ -11,3 +11,5 @@ newsboat -r
 newsboat -x reload print-unread ...
 # See keyboard shortcuts (the most relevant are visible in the status line):
 ?
+# See keyboard shortcuts (the most relevant are visible in the status line):
+<?>

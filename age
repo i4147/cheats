@@ -13,3 +13,4 @@ age --recipients-file path/to/recipients_file path/to/unencrypted_file --output 
 age --decrypt --output path/to/decrypted_file path/to/encrypted_file
 # Decrypt a file with a private key file:
 age --decrypt --identity path/to/private_key_file --output path/to/decrypted_file path/to/encrypted_file
+# See also: `age-keygen`, `age-inspect`.

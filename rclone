@@ -11,3 +11,11 @@ rclone copy /local/path remote:path
 rclone sync /local/path remote:path
 # Server side Copy
 rclone copy s3:oldbucket s3:newbucket
+# Copy files changed within the past 24 hours to a remote from the local machine, asking the user to confirm each file:
+rclone copy --interactive --max-age 24h remote_name:path/to/directory path/to/local_directory
+# Simulate deleting a remote file or directory (remove `--dry-run` from the command to actually delete):
+rclone --dry-run delete remote_name:path/to/file_or_directory
+# Mount rclone remote (experimental):
+rclone mount remote_name:path/to/directory path/to/mount_point
+# Unmount rclone remote if `<Ctrl c>` fails (experimental):
+fusermount --update path/to/mount_point

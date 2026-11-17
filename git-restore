@@ -16,3 +16,4 @@ git restore --staged :/
 git restore --worktree --staged :/
 # Interactively select sections of files to restore:
 git restore --patch
+# See also: `git checkout`, `git reset`.

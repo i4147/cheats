@@ -10,3 +10,5 @@ IFS=":"
 IFS=$' \t\n'
 # Temporarily change the IFS value in a subshell:
 (IFS=":"; echo "one:two:three")
+# Specify what character to use for word splitting with `read`:
+IFS=: read variable1 variable2 ...

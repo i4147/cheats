@@ -17,3 +17,5 @@ docker system events
 docker system events --filter 'type=container' --format 'json .'
 # Display system-wide information:
 docker system info
+# Remove all unused data:
+docker system prune --all --volumes

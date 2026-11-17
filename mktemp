@@ -7,3 +7,7 @@ mktemp
 mktemp --suffix ".ext"
 # Create a temporary directory and print the absolute path to it:
 mktemp -d
+# Use a custom directory if `$TMPDIR` is not set (the default is platform-dependent, but usually `/tmp`):
+mktemp -p /path/to/temporary_directory
+# Use a custom file name template:
+mktemp -t example.XXXXXXXX

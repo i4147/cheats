@@ -4,3 +4,4 @@
 # More information: <https://cloud.google.com/sdk/gcloud/reference/help>.
 # Search the `gcloud` CLI reference documents for specific terms:
 gcloud help
+# See also: `gcloud topic`.

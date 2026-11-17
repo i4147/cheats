@@ -49,3 +49,4 @@ conda install python=3.4 numpy
 conda list
 # Delete unused packages and caches:
 conda clean --all
+# See also: `mamba`.

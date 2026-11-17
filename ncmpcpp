@@ -220,3 +220,4 @@ ncmpcpp --current-song
 ncmpcpp --config file
 # Use a different set of key bindings from a file:
 ncmpcpp --bindings file
+# See also: `mpd`, `mpc`, `qmmp`, `termusic`.

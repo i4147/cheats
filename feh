@@ -15,3 +15,5 @@ feh --slideshow-delay seconds path/to/images
 feh --bg-center|fill|max|scale|tile path/to/image
 # Create a montage of all images within a directory. Outputs as a new image:
 feh --montage --thumb-height 150 --thumb-width 150 --index-info "%nn%wx%h" --output path/to/montage_image.png
+# Set the behavior when reaching the beginning or end of the image list:
+feh --on-last-slide hold path/to/images

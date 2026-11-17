@@ -16,3 +16,5 @@ gpg2 --import path/to/public_key.gpg
 gpg2 --export --armor alice@example.com
 # Export the private key with a specified email address to the standard output:
 gpg2 --export-secret-keys --armor alice@example.com
+# View documentation for the original command:
+tldr gpg

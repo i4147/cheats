@@ -11,3 +11,7 @@ alacritty -e command
 alacritty --config-file path/to/config.yml
 # Run with live config reload enabled (can also be enabled by default in `alacritty.yml`):
 alacritty --live-config-reload --config-file path/to/config.yml
+# Start the Alacritty daemon (without creating a window):
+alacritty --daemon
+# Create a new window using the already running Alacritty process:
+alacritty msg create-window

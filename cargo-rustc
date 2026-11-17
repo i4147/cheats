@@ -17,3 +17,6 @@ cargo rustc --lib -- -D unsafe-code
 cargo rustc --package package
 # Build only the specified binary:
 cargo --bin name
+# See also: `rustc`.
+# Build only the specified binary:
+cargo rustc --bin name

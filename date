@@ -56,3 +56,5 @@ date --rfc-3339=s
 date 093023592021.59
 # Display the current ISO week number:
 date +%V
+# Set the current date using the format `MMDDhhmmYYYY.ss` (`YYYY` and `.ss` are optional):
+sudo date 093023592021.59

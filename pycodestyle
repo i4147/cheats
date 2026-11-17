@@ -18,3 +18,5 @@ pycodestyle --show-source file.py
 pycodestyle --verbose file.py
 # Check PEP 8 compliance but only show a report and nothing else
 pycodestyle --quiet file.py
+# Show the specific PEP 8 text for each error:
+pycodestyle --show-pep8 file.py

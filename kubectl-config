@@ -15,3 +15,7 @@ kubectl config use|use-context context_name
 kubectl config delete-cluster|delete-context|delete-user cluster|context|user
 # Permanently add custom kubeconfig files:
 export KUBECONFIG="$HOME.kube/config:path/to/custom/kubeconfig.yaml" kubectl config get-contexts
+# Set the default namespace of the current context:
+kubectl config set-context --current --namespace namespace
+# Permanently add custom kubeconfig files:
+export KUBECONFIG="path/to/kubeconfig1.yaml:path/to/kubeconfig2.yaml"

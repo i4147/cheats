@@ -7,3 +7,5 @@ id3tag --artist=artist --title=title path/to/file.mp3
 id3tag --album=album *.mp3
 # Get more help:
 id3tag --help
+# Set artist and song title tag of an MP3 file:
+id3tag --artist artist --song song_title path/to/file.mp3

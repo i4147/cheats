@@ -11,3 +11,4 @@ lilypond -s path/to/file
 lilypond --output=path/to/output_file path/to/input_file
 # Show the current version of lilypond:
 lilypond --version
+# See also: `musescore`.

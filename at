@@ -23,3 +23,7 @@ at now + 5 minutes
 echo "./make_db_backup.sh" | at 1000
 # Execute commands from a given file next Tuesday:
 at -f path/to/file 9:30 PM Tue
+# List all queued jobs for the current user (same as `atq`):
+at -l
+# View a specified job:
+at -c job_number

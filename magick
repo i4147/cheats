@@ -12,3 +12,11 @@ magick *.jpg images.gif
 magick -size 640x480 pattern:checkerboard checkerboard.png
 # Convert images to individual PDF pages:
 magick *.jpg +adjoin page-%d.pdf
+# Resize an image by a percentage:
+magick path/to/input_image.png -resize 50% path/to/output_image.png
+# Scale an image to have a specified file size:
+magick path/to/input_image.png -define jpeg:extent=512kb path/to/output_image.jpg
+# Vertically/horizontally append images and have the empty space be transparent:
+magick convert -background none path/to/image1.png path/to/image2.png ... -append path/to/output_image.png
+# Create a PDF file out of all JPEG images in the current directory:
+magick *.jpg -adjoin path/to/file.pdf

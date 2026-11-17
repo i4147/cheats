@@ -5,3 +5,4 @@
 # More information: <https://dvc.org/doc/command-reference/unfreeze>.
 # Unfreeze 1 or more specified stages:
 dvc unfreeze stage_name_a [stage_name_b ...]
+# See also: `dvc freeze`.

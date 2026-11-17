@@ -6,3 +6,4 @@
 gcloud topic topic_name
 # List all available topics:
 gcloud topic --help
+# See also: `gcloud help`.

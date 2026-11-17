@@ -18,3 +18,5 @@ lsd -lS
 lsd -ltr
 # Only list directories:
 lsd -d */
+# Recursively list all directories in a tree format:
+lsd --tree --directory-only

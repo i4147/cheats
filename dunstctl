@@ -9,3 +9,9 @@ dunstctl set-paused false
 dunstctl close-all
 # Display help:
 dunstctl --help
+# Delete all notifications from history:
+dunstctl history-clear
+# Display the latest notification from history:
+dunstctl history-pop
+# Reload the configuration file:
+dunstctl reload

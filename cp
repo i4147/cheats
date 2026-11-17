@@ -33,3 +33,5 @@ cp -i *.txt path/to/target_directory
 cp -L link path/to/target_directory
 # Use the first argument as the destination directory (useful for `xargs ... | cp -t <DEST_DIR>`):
 cp -t path/to/target_directory path/to/file_or_directory1 path/to/file_or_directory2 ...
+# Use the full path of source files, creating any missing intermediate directories when copying:
+cp --parents source/path/to/file path/to/target_file

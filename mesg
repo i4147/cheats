@@ -8,3 +8,4 @@ mesg
 mesg n
 # Enable receiving messages from the write command:
 mesg y
+# See also: `write`, `talk`.

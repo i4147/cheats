@@ -14,3 +14,19 @@ crane --platform platform subcommand
 crane [-v|--verbose] subcommand
 # Display help for a subcommand:
 crane [-h|--help] subcommand
+# Log in to a registry:
+crane auth login registry --username user --password password
+# List the repos in a registry:
+crane catalog registry --full-ref
+# List the tags in a repository:
+crane ls repository --omit-digest-tags
+# Pull remote images by reference and store their contents locally:
+crane pull image tarball
+# Push local image contents to a remote registry:
+crane push path/to/directory_or_tarball image
+# Efficiently tag a remote image:
+crane tag image tag
+# Efficiently copy a remote image while retaining the digest value:
+crane cp source destination --all-tags
+# Delete an image reference from its registry:
+crane delete image

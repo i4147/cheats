@@ -17,3 +17,6 @@ asciinema rec -i 2.5
 asciinema cat path/to/file.cast
 # Upload a locally saved terminal session to asciinema.org:
 asciinema upload path/to/file.cast
+# See also: `terminalizer`, `agg`.
+# Stream the current terminal on a local webpage:
+asciinema st --local

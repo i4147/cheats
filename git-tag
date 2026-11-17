@@ -16,3 +16,5 @@ git tag -d tag_name
 git fetch --tags
 # List all tags whose ancestors include a given commit:
 git tag --contains commit
+# Push a tag to remote:
+git push origin tag tag_name

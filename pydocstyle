@@ -18,3 +18,9 @@ pydocstyle --config=.pydocstyle.cfg
 pydocstyle --version
 # Show help text with available options for pydocstyle
 pydocstyle --help
+# Display the total number of errors:
+pydocstyle --count file.py
+# Ignore one or more errors:
+pydocstyle --ignore D101,D2,D107,... file.py
+# Check for errors from a specific convention:
+pydocstyle --convention pep257 file.py

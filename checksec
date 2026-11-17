@@ -9,3 +9,6 @@ checksec --dir=path/to/directory
 checksec --proc=pid
 # List security properties of the running kernel:
 checksec --kernel
+# Note: For older versions, use flags (e.g., `--file` instead of `file`).
+# List security properties of a process:
+checksec proc process_id

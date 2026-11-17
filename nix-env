@@ -17,3 +17,5 @@ nix-env -e pkg_name
 nix-env -u pkg_name
 # Upgrade all packages:
 nix-env -u
+# Get usage help for a specific operation (`--install`, `--upgrade`, etc.):
+nix-env --help --option_name

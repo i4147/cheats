@@ -7,3 +7,7 @@ gpgv path/to/file
 gpgv path/to/signature path/to/file
 # Add a file to the list of keyrings (a single exported key also counts as a keyring):
 gpgv --keyring ./alice.keyring path/to/signature path/to/file
+# Note: `gpgv` reads trusted pubkeys from `~/.gnupg/trustedkeys.kbx` in absence of the `--keyring` option.
+# See also: `gpg`.
+# Verify a detached signature using a specific public key file in plain text format (`.txt`):
+gpg --dearmor --output path/to/pubkey.gpg path/to/pubkey.txt && gpgv --keyring path/to/pubkey.gpg path/to/signature.asc path/to/data_file

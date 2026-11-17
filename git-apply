@@ -14,3 +14,4 @@ git apply --stat --apply path/to/file
 git apply --reverse path/to/file
 # Store the patch result in the index without modifying the working tree:
 git apply --cache path/to/file
+# See also: `git am`.

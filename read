@@ -25,3 +25,15 @@ read -n 1 -e -p 'Prompt: '
 while IFS='=' read -a Line; do
 	COMMANDS
 done < INPUT_FILE
+# Store each of the next lines you enter as values of an array:
+read -a array
+# Assign multiple values to multiple variables:
+read <<< "The surname is Bond" _ variable1 _ variable2
+# Do not let backslash (`\`) act as an escape character:
+read -r variable
+# Display a prompt before the input:
+read -p "Enter your input here:" variable
+# Do not echo typed characters (silent mode):
+read -s variable
+# Perform an action on each line of a command's output:
+command | while IFS= read -r line; do echo "$line"; done

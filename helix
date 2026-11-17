@@ -16,3 +16,5 @@ u
 /search_pattern<Enter>
 # Format the file:
 :format
+# View documentation for the original command:
+tldr hx

@@ -15,3 +15,5 @@ git commit --amend
 git commit path/to/file1 path/to/file2
 # Create a commit, even if there are no staged files:
 git commit -m "message" --allow-empty
+# Commit staged files and sign them with the specified GPG key (or the one defined in the configuration file if no `key_id` is specified):
+git commit --gpg-sign key_id --message "message"

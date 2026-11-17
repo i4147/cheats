@@ -12,3 +12,4 @@ arduino-builder -build-path path/to/build_directory
 arduino-builder -build-options-file path/to/build.options.json
 # Enable verbose mode:
 arduino-builder -verbose true
+# Note: This command is deprecated, use `arduino` instead.

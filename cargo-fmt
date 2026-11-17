@@ -7,3 +7,4 @@ cargo fmt
 cargo fmt --check
 # Pass arguments to each `rustfmt` call:
 cargo fmt -- rustfmt_args
+# See also: `rustfmt`.

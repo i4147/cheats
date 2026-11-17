@@ -15,3 +15,7 @@ gh pr merge --merge|squash|rebase --subject commit_message
 gh pr merge --squash --body="commit_message_body"
 # Display help:
 gh pr merge --help
+# Enable auto-merge (squash):
+gh pr merge pr_number --auto --squash
+# Merge with admin privileges (if allowed):
+gh pr merge pr_number --admin

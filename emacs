@@ -266,3 +266,4 @@ emacsclient --eval '(save-buffers-kill-emacs)'
 Ctrl + X, Ctrl + S
 # Quit Emacs:
 Ctrl + X, Ctrl + C
+# See also: `emacsclient`.

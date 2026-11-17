@@ -11,3 +11,5 @@ dircolors --bourne-shell
 dircolors --c-shell
 # View the default colors for file types and extensions:
 dircolors --print-data
+# Display each filetype with the color they would appear in `ls`:
+dircolors --print-ls-colors

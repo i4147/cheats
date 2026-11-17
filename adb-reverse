@@ -9,3 +9,5 @@ adb reverse tcp:remote_port tcp:local_port
 adb reverse --remove tcp:remote_port
 # Remove all reverse socket connections from all emulators and devices:
 adb reverse --remove-all
+# Reverse a TCP port from a specific emulator or device (by device ID / [s]erial number) to localhost:
+adb -s device_id reverse tcp:remote_port tcp:local_port

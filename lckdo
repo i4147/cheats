@@ -3,3 +3,4 @@
 # More information: <https://joeyh.name/code/moreutils/>.
 # View documentation for the recommended replacement:
 tldr flock
+# Note: This command is deprecated, use `flock` instead.

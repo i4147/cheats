@@ -17,3 +17,7 @@ ng build
 ng test
 # Check the version of your current Angular installation:
 ng version
+# Add a package to the current project:
+ng add package
+# Update workspace dependencies:
+ng update

@@ -90,3 +90,5 @@ docker exec -it container_name sh
 docker rm container_name
 # Fetch and follow the logs of a container:
 docker logs -f container_name
+# Start or stop an existing container:
+docker container start container_name

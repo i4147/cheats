@@ -10,3 +10,4 @@ git ignore file_pattern --private
 git ignore file_pattern
 # Ignore file(s) globally, updating global `.gitignore` file:
 git ignore file_pattern --global
+# See also: `git ignore-io`.

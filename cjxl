@@ -8,3 +8,5 @@ cjxl path/to/image.ext path/to/output.jxl
 cjxl --distance 0 --effort 9 path/to/image.ext path/to/output.jxl
 # Display an extremely detailed help page:
 cjxl [-h -v -v -v -v|--help --verbose --verbose --verbose --verbose]
+# Convert a JPEG to a JPEG XL with specific lossy quality:
+cjxl --quality 0..100 --lossless_jpeg 0 path/to/image.jpeg path/to/output.jxl

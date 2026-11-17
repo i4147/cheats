@@ -20,3 +20,5 @@ yapf --style=<config_file_path> <file_name.py>
 yapf --diff <file_name.py>
 # Display help message with all available options
 yapf --help
+# Recursively format all Python files in a directory, concurrently:
+yapf --recursive --in-place --style pep8 --parallel path/to/directory

@@ -14,3 +14,4 @@ emacsclient --eval '(command)'
 emacsclient --alternate-editor editor path/to/file
 # Stop a running Emacs server and all its instances, asking for confirmation on unsaved files:
 emacsclient --eval '(save-buffers-kill-emacs)'
+# See also: `emacs`.

@@ -20,3 +20,13 @@ rustup self uninstall
 rustup doctor
 # Add a component to a toolchain
 rustup component add rustfmt
+# Install the nightly toolchain for your system:
+rustup install nightly
+# Switch the default toolchain to nightly so that the `cargo` and `rustc` commands will use it:
+rustup default nightly
+# Use the nightly toolchain when inside the current project but leave global settings unchanged:
+rustup override set nightly
+# List installed toolchains:
+rustup show
+# Open the local Rust documentation in the default web browser:
+rustup doc

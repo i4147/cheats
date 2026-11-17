@@ -15,3 +15,5 @@ Enter
 p
 # Quit the game:
 Ctrl + C
+# Soft drop the piece:
+<ArrowDown>

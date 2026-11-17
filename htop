@@ -29,3 +29,6 @@ htop --sort sort_item
 tab
 # Display help:
 htop --help
+# See also: `top`, `atop`, `glances`, `btop`, `btm`.
+# Disable all system and process changing features:
+htop --readonly

@@ -14,3 +14,4 @@ now remove deployment_id
 now login
 # Initialize an example project (a new directory will be created):
 now init
+# Note: This command is deprecated, use `vercel` instead.

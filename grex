@@ -13,3 +13,5 @@ grex -w space_separated_strings
 grex -s space_separated_strings
 # Add {min, max} quantifier representation for repeating sub-strings:
 grex -r space_separated_strings
+# Do not generate anchors and non-capture groups:
+grex --no-anchors --capture-groups string1 string2 ...

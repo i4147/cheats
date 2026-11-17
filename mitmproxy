@@ -5,3 +5,10 @@
 mitmproxy
 # Start mitmproxy bound to custom address and port:
 mitmproxy -b ip_address -p port
+# See also: `mitmweb`, `mitmdump`.
+# Start `mitmproxy` bound to a custom address and port:
+mitmproxy --listen-host ip_address --listen-port port
+# Export the logs with SSL/TLS master keys to external programs (wireshark, etc.):
+SSLKEYLOGFILE="path/to/file" mitmproxy
+# Set the console layout:
+mitmproxy --console-layout horizontal

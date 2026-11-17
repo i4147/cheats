@@ -9,3 +9,6 @@ duf --all
 duf path/to/directory1 path/to/directory2 ...
 # Sort the output by a specified criteria:
 duf --sort size|used|avail|usage
+# See also: `ncdu`, `df`.
+# Change the theme (if `duf` fails to use the right theme):
+duf --theme dark

@@ -13,3 +13,7 @@ cat file.html | pup 'title'
 cat file.html | pup ':contains("History")'
 # Multiple groups of selectors.
 cat file.html | pup 'title, h1 span[dir="auto"]'
+# Print all text from the filtered HTML elements and their children:
+cat index.html | pup 'div text{}'
+# Print HTML as JSON:
+cat index.html | pup 'div json{}'

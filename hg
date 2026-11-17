@@ -29,3 +29,9 @@ hg help
 hg help command
 # Check the Mercurial version:
 hg --version
+# Create an empty Mercurial repository:
+hg init
+# View the status of a local repository:
+hg status
+# Reset everything the way it was in the latest commit:
+hg update --clean; hg purge

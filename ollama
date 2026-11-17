@@ -18,3 +18,5 @@ ollama ps
 ollama rm model
 # Create a model from a `Modelfile` ([f]):
 ollama create new_model_name -f path/to/Modelfile
+# Run a model with a single prompt and thinking turned off:
+ollama run model --think=false "prompt"

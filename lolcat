@@ -9,3 +9,9 @@ fortune | lolcat
 lolcat -a path/to/file
 # Print a file to the console with 24-bit (truecolor) rainbow colors:
 lolcat -t path/to/file
+# Use a seed to generate consistent colors (default: `0` as in random):
+lolcat --seed number path/to/file
+# Control rainbow frequency (default: `0.1`):
+lolcat --frequency number path/to/file
+# Control rainbow smoothing (default: `3`):
+lolcat --spread number path/to/file

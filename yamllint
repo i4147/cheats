@@ -18,3 +18,5 @@ yamllint -d "{extends: default, rules: {line-length: disable}}" example.yaml
 yamllint --strict example.yaml
 # Check a YAML string directly from the command line
 echo "key: value" | yamllint -
+# Read from `stdin`:
+cat path/to/file.yaml | yamllint -

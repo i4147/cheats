@@ -13,3 +13,7 @@ md5sum --check path/to/file.md5
 md5sum --check --quiet path/to/file.md5
 # Only show a message for files for which verification fails, ignoring missing files:
 md5sum --ignore-missing --check --quiet path/to/file.md5
+# Calculate and save the list of MD5 checksums to a file:
+md5sum path/to/file1 path/to/file2 ... > path/to/file.md5
+# Check a known MD5 checksum of a file:
+echo known_md5_checksum_of_the_file path/to/file | md5sum --check

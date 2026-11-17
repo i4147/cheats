@@ -16,3 +16,5 @@ az vm start --resource-group rg --name vm_name
 az vm restart --resource-group rg --name vm_name
 # List VM images available in the Azure Marketplace:
 az vm image list
+# Display a table of available Virtual Machines:
+az vm list --output table

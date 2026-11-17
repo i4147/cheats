@@ -15,3 +15,7 @@ open -R path/to/file
 open *.ext
 # Open a [n]ew instance of an application specified via [b]undle identifier:
 open -n -b com.domain.application
+# View documentation for the command available in macOS:
+tldr open --platform osx
+# View documentation for the command available through fish:
+tldr open.fish

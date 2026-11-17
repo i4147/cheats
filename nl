@@ -21,3 +21,13 @@ nl -t path/to/file
 nl -b a path/to/file
 # Number only the body lines that match a basic regular expression (BRE) pattern:
 nl -b p'FooBar[0-9]' path/to/file
+# Read from `stdin`:
+command | nl -
+# Use a specific [i]ncrement for line numbering:
+nl -i increment path/to/file
+# Specify the line numbering format to [r]ight or [l]eft justified, keeping leading [z]eros or [n]ot:
+nl -n rz
+# Specify the line numbering's [w]idth (6 by default):
+nl -w col_width path/to/file
+# Use a specific string to [s]eparate the line numbers from the lines (`TAB` by default):
+nl -s separator path/to/file

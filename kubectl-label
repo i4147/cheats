@@ -11,3 +11,5 @@ kubectl label pods --all key=value
 kubectl label -f pod_definition_file key=value
 # Remove the label from a pod:
 kubectl label pod pod_name key-
+# Update a pod label by overwriting the existing value:
+kubectl label po pod_name key=value --overwrite

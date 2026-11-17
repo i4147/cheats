@@ -9,3 +9,4 @@ browsh --startup-url URL
 <Ctrl l>
 # Exit browsh:
 <Ctrl q>
+# See also: `carbonyl`.

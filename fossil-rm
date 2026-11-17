@@ -8,3 +8,5 @@ fossil rm path/to/file_or_directory
 fossil rm --hard path/to/file_or_directory
 # Re-add all previously removed and uncommitted files to Fossil version control:
 fossil rm --reset
+# View documentation for the original command:
+tldr fossil delete

@@ -12,3 +12,9 @@ bitcoin-cli getwalletinfo
 bitcoin-cli listunspent
 # Export the wallet information to a text file:
 bitcoin-cli dumpwallet "path/to/file"
+# Get blockchain information:
+bitcoin-cli getblockchaininfo
+# Get network information:
+bitcoin-cli getnetworkinfo
+# Stop the Bitcoin Core daemon:
+bitcoin-cli stop

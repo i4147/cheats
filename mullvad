@@ -9,3 +9,10 @@ mullvad lan set allow
 mullvad connect
 # Check status of VPN tunnel:
 mullvad status
+# See also: `fastd`, `ivpn`, `mozillavpn`, `warp-cli`.
+# Select a server in a specific city:
+mullvad relay set location se mma
+# Select a specific server:
+mullvad relay set location se-mma-wg-001
+# Check the account expiration date and obtain the device name:
+mullvad account get

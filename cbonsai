@@ -11,3 +11,4 @@ cbonsai -m "message"
 cbonsai -v
 # Display cbonsai help:
 cbonsai -h
+# See also: `cmatrix`, `asciiquarium`, `pipes.sh`.

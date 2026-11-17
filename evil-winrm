@@ -18,3 +18,5 @@ PS > menu
 PS > script.ps1
 # Invoke a binary on the host from the `--executables` directory:
 PS > Invoke-Binary binary.exe
+# [Interactive] List all loaded PowerShell functions:
+menu
