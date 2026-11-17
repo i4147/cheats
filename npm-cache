@@ -17,3 +17,5 @@ npm cache verify
 npm config get cache
 # Change the cache path:
 npm config set cache path/to/directory
+# List all entries in the npx cache:
+npm cache npx ls

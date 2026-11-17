@@ -11,3 +11,5 @@ docker logs container_name --tail 5
 docker logs -t container_name
 # Print logs from a certain point in time of container execution (i.e. 23m, 10s, 2013-01-02T13:23:37):
 docker logs container_name --until time
+# View documentation for the original command:
+tldr docker container logs

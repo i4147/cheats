@@ -19,3 +19,4 @@ more --help
 q
 # Display help about interactive commands:
 h
+# See also: `less`.

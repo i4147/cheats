@@ -13,3 +13,21 @@ egrep --with-filename --line-number "search_pattern" path/to/file
 egrep --recursive --binary-files=without-match "search_pattern" path/to/directory
 # Search for lines that do not match a pattern:
 egrep --invert-match "search_pattern" path/to/file
+# Note: This command is an alias of `grep --extended-regexp`.
+# See also: `regex`.
+# Search for one or more repeated characters:
+egrep 'a+' path/to/file
+# Search for zero or one occurrences of a character (optional match):
+egrep 'a?' path/to/file
+# Search for 10 repetitions of a character:
+egrep 'a{10}' path/to/file
+# Search for 3 to 7 repetitions of a character:
+egrep 'a{3,7}' path/to/file
+# Search for one of the listed options:
+egrep 'cat|dog|mouse' path/to/file
+# Search for one of the listed options inside a larger pattern:
+egrep 'c(a|o|u)p' path/to/file
+# Search for a group of characters repeating one or more times:
+egrep '(aeiou)+' path/to/file
+# Search using standard character classes (more info: <https://www.regular-expressions.info/posixbrackets.html>):
+egrep [[:alnum:]] path/to/file

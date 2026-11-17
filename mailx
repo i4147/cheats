@@ -13,3 +13,5 @@ mailx -s "subject" -c cc_addr to_addr
 mailx -s "subject" -r from_addr to_addr
 # Send mail with an attachment:
 mailx -a path/to/file -s "subject" to_addr
+# Send mail with content read from a file:
+mailx < content.txt --subject "subject" to_addr

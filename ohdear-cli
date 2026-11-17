@@ -9,3 +9,5 @@ ohdear-cli sites:add url
 ohdear-cli sites:list
 # Display details about a specific site:
 ohdear-cli sites:show site_id
+# View documentation for the command under its current name:
+tldr ohdear

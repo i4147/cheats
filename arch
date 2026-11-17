@@ -4,3 +4,5 @@
 # More information: <https://www.gnu.org/software/coreutils/arch>.
 # Display the system's architecture:
 arch
+# View documentation for the original command:
+tldr uname

@@ -9,3 +9,6 @@ bindkey -s '^o' 'cd ..\n'
 bindkey -l
 # View the hotkey in a keymap:
 bindkey -M main
+# See also: `zle`.
+# Check which mode is active (vi or emacs):
+bindkey -lL main | grep -Eo 'viins|emacs'

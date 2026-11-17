@@ -6,3 +6,4 @@
 grap path/to/input.grap > path/to/output.pic
 # Typeset a `grap` file to PDF using the [me] macro package, saving the output to a file:
 grap path/to/input.grap | pic -T pdf | groff -me -T pdf > path/to/output.pdf
+# See also: `pic`, `groff`.

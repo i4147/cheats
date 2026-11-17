@@ -13,3 +13,4 @@ lp -n N path/to/filename
 lp -P 1,3-5,16 path/to/filename
 # Resume printing a job:
 lp -i job_id -H resume
+# See also: `lpstat`, `lpoptions`.

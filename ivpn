@@ -5,3 +5,4 @@
 ivpn status
 # Print a list of available servers to connect to:
 ivpn servers
+# See also: `fastd`, `mozillavpn`, `mullvad`, `warp-cli`.

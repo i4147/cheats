@@ -21,3 +21,6 @@ traceroute -i interface hostname_or_IP_address
 traceroute -n hostname_or_IP_address
 # Set the source address
 traceroute -s source_address hostname_or_IP_address
+# See also: `mtr`.
+# Determine the MTU to the destination:
+traceroute --mtu example.com

@@ -11,3 +11,4 @@ gitk --since="1 week ago"
 gitk --until="1/1/2015"
 # Show at most 100 changes in all branches:
  gitk --max-count=100 --all
+# See also: `git gui`, `git cola`, `tig`.

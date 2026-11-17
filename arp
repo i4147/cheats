@@ -21,3 +21,5 @@ arp -a
 arp -d address
 # Create an entry in the ARP table:
 arp -s address mac_address
+# Show the current ARP table:
+arp

@@ -5,3 +5,6 @@
 compopt
 # Print the completion options for given command:
 compopt command
+# See also: `compgen`, `complete`.
+# Enable or disable a completion option of a command:
+compopt -o option1 -o option2 command

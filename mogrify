@@ -12,3 +12,5 @@ mogrify -format jpg *.png
 mogrify -modulate 100,50 *
 # Double the brightness of all image files in the current directory:
 mogrify -modulate 200 *
+# View documentation for the original command:
+tldr magick mogrify

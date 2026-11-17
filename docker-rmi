@@ -9,3 +9,5 @@ docker rmi image1 image2 ...
 docker rmi --force image
 # Remove an image without deleting untagged parents:
 docker rmi --no-prune image
+# View documentation for the original command:
+tldr docker image rm

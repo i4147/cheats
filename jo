@@ -32,3 +32,5 @@ export COUNTRY=USA
 jo country=$COUNTRY
 # JSON object with multiple nested levels
 jo user=$(jo name=Chris details=$(jo email=chris@example.com age=28)) status=active
+# View documentation for the original command:
+tldr autojump

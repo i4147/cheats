@@ -12,3 +12,5 @@ clang++ path/to/source.cpp -std=c++20 -o path/to/output_executable
 clang++ path/to/source.cpp -o path/to/output_executable -Ipath/to/header_path -Lpath/to/library_path -lpath/to/library_name
 # Compile source code into LLVM Intermediate Representation (IR):
 clang++ -S -emit-llvm path/to/source.cpp -o path/to/output.ll
+# Display version:
+clang++ --version

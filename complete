@@ -7,3 +7,10 @@ complete -F function command
 complete -C autocomplete_command command
 # Apply autocompletion without appending a space to the completed word:
 complete -o nospace -F function command
+# See also: `compgen`, `compopt`.
+# Set arguments of a command to autocomplete to shell builtins:
+complete -b command
+# List all loaded complete specifications:
+complete -p
+# List loaded complete specifications for a command:
+complete -p command

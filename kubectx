@@ -9,3 +9,5 @@ kubectx name
 kubectx -
 # Delete a named context:
 kubectx -d name
+# Rename a named context:
+kubectx alias=name

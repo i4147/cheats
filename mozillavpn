@@ -17,3 +17,4 @@ mozillavpn deactivate
 mozillavpn logout
 # Display help for a subcommand:
 mozillavpn subcommand --help
+# See also: `fastd`, `ivpn`, `mullvad`, `warp-cli`.

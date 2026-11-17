@@ -9,3 +9,16 @@ hledger --file path/to/file.journal accounts --tree
 hledger incomestatement --monthly --depth 2
 # Print the amount of cash spent on food:
 hledger print assets:cash | hledger -f- -I balance expenses:food --depth 2
+# See also: `hledger-ui`, `hledger-web`.
+# Import new transactions from `bank.csv`, using `bank.csv.rules` to convert:
+hledger import path/to/bank.csv
+# Show all accounts, as a hierarchy, and their types:
+hledger accounts --tree --types
+# Show asset and liability account balances, including zeros, hierarchically:
+hledger bs --empty --tree --no-elide
+# Show monthly incomes/expenses/totals, largest first, summarized to 2 levels:
+hledger is --monthly --row-total --average --sort --depth 2
+# Show the `assets:bank:checking` account's transactions and running balance:
+hledger areg assets:bank:checking
+# Show the amount spent on food from the `assets:cash` account:
+hledger print assets:cash | hledger --file - --ignore-assertions aregister expenses:food

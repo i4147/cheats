@@ -16,3 +16,5 @@ diff <(gron file1.json) <(gron file2.json)
 gron large_input.json | less
 # Handle JSON with comments by stripping comments and then gron the file
 grep -v '^//' input_with_comments.json | gron
+# Don't sort output data:
+gron --no-sort path/to/file

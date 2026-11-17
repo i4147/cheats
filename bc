@@ -14,3 +14,5 @@ bc path/to/script.bc
 echo 'scale = 10; 5 / 3' | bc
 # Calculate a sine/cosine/arctangent/natural logarithm/exponential function using `mathlib`:
 echo 's|c|a|l|e(1)' | bc --mathlib
+# Execute an inline factorial script:
+echo "define factorial(n) { if (n <= 1) return 1; return n*factorial(n-1); }; factorial(10)" | bc

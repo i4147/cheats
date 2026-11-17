@@ -7,3 +7,4 @@ apropos regular_expression
 apropos -l regular_expression
 # Search for pages that contain all the expressions given:
 apropos regular_expression_1 -a regular_expression_2 -a regular_expression_3
+# See also: `man`.

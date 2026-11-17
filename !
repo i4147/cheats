@@ -17,3 +17,4 @@ command !$
 !:-
 # Print last command that starts with a string without executing it:
 !string:p
+# See also: `^`.

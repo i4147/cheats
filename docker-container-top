@@ -2,3 +2,7 @@
 # This command is an alias of `docker top`.
 # View documentation for the original command:
 tldr docker top
+# Display the running processes of a container:
+docker top container
+# Display help:
+docker top --help

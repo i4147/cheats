@@ -11,3 +11,7 @@ killall -SIGINT openconnect
 openconnect --config=path/to/file vpn.example.org
 # Connect to a server and authenticate with a specific SSL client certificate:
 openconnect --certificate=path/to/file vpn.example.org
+# Specify the user to log in as:
+sudo openconnect --user username vpn.example.org
+# Specify the connection protocol:
+sudo openconnect --protocol nc vpn.example.org

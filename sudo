@@ -51,3 +51,4 @@ sudo -i
 # systems like Ubuntu, this is assumed, but systems like Debian would require
 # that the user make use of this flag when wanting to keep their environment.
 sudo -E [CMD]
+# See also: `pkexec`, `run0`, `doas`.

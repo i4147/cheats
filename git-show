@@ -17,3 +17,5 @@ git show --stat commit
 git show --summary commit
 # Show the contents of a file as it was at a given revision (e.g. branch, tag or commit):
 git show revision:path/to/file
+# Show a simplified list of all files changed in a commit (modified, added, and deleted):
+git show --name-only commit

@@ -10,3 +10,4 @@ drupal module:uninstall module_name
 drupal cache:rebuild
 # View current Drupal installation status:
 drupal site:status
+# Note: This command is deprecated, use `drush` instead.

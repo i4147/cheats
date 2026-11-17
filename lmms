@@ -18,3 +18,4 @@ lmms render path/to/mmpz_or_mmp/file
 lmms rendertracks path/to/mmpz_or_mmp/file path/to/dump/directory
 # Render with custom samplerate, format, and as a loop:
 lmms render --samplerate 88200 --format ogg --loop --output path/to/output/file.ogg
+# See also: `mixxx`.

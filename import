@@ -8,3 +8,5 @@ import -window root output.postscript
 import -window root -display remote_host:screen.display output.png
 # Capture a specific window, given its ID as displayed by `xwininfo`, into the JPEG format:
 import -window window_id output.jpg
+# View documentation for the original command:
+tldr magick import

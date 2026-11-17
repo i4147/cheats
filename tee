@@ -11,3 +11,11 @@ echo 3 | sudo tee /proc/sys/vm/drop_caches
 # Pipe the current Vim buffer to a shell process, which in this case is `tee`.
 # This is especially useful as a shortcut added to `.vimrc` or similar.
 :w !sudo tee %
+# Copy `stdin` to each file, and also to `stdout`:
+echo "example" | tee path/to/file
+# Append to the given files, do not overwrite:
+echo "example" | tee --append path/to/file
+# Print `stdin` to the terminal, and also pipe it into another program for further processing:
+echo "example" | tee /dev/tty | xargs printf "[%s]"
+# Create a directory called "example", count the number of characters in "example", and write "example" to the terminal:
+echo "example" | tee >(xargs mkdir) >(wc --bytes)

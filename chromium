@@ -17,3 +17,4 @@ chromium --user-data-dir=path/to/directory
 chromium --user-data-dir=path/to/directory --disable-web-security
 # Open with a DevTools window for each tab opened:
 chromium --auto-open-devtools-for-tabs
+# Note: You may need to replace the `chromium` command with your desired web browser, such as `brave`, `google-chrome`, `opera`, or `vivaldi`.

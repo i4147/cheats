@@ -2,3 +2,5 @@
 # This command is an alias of `docker rm`.
 # View documentation for the original command:
 tldr docker rm
+# View documentation for the original command:
+tldr docker container rm

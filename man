@@ -25,3 +25,4 @@ man -w command
 man command --locale=locale
 # Search for manpages containing a search string:
 man -k "search_string"
+# See also: `whatis`, `apropos`.

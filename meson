@@ -13,3 +13,9 @@ meson test
 meson --help
 # Show version info:
 meson --version
+# Generate a project with default values:
+meson init
+# Run all tests in the project:
+meson test -C path/to/build_directory
+# Install the project to `/usr/local`:
+meson install -C path/to/build_directory

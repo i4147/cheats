@@ -15,3 +15,6 @@ chezmoi -v apply
 chezmoi init https://example.com/path/to/repository.git
 # Fetch the latest changes from a remote repository:
 chezmoi update
+# See also: `stow`, `tuckr`, `vcsh`, `homeshick`.
+# Update repository with local changes:
+chezmoi re-add path/to/dotfile1 path/to/dotfile2 ...

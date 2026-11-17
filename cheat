@@ -23,3 +23,4 @@ cheat -l
 cheat -s command
 # Get the current cheat version:
 cheat -v
+# See also: `tldr`, `cheatshh`, `navi`.

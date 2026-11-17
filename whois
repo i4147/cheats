@@ -14,3 +14,5 @@ whois -h whois.example.com -p 43 example.com
 whois -H example.com
 # Display help and additional options
 whois --help
+# Get abuse contact for an IP address:
+whois -b 8.8.8.8

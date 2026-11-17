@@ -17,3 +17,5 @@ exa --long --sort=modified
 exa --long --header --icons --git
 # Don't list files mentioned in `.gitignore`:
 exa --git-ignore
+# Note: `exa` is no longer maintained. Use `eza` instead.
+# See also: `eza`.

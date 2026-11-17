@@ -15,3 +15,4 @@ delta --hyperlinks path/to/old_file_or_directory path/to/new_file_or_directory
 delta --show-config
 # Display supported languages and associated file extensions:
 delta --list-languages
+# See also: `diff`, `difft`.

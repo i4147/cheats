@@ -11,3 +11,6 @@ g bookmark_name
 p bookmark_name
 # Delete a bookmark:
 d bookmark_name
+# See also: `autojump`.
+# Add the bashmark aliases to your shell:
+source /usr/share/bashmarks/bashmarks.sh

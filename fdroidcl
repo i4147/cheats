@@ -11,3 +11,7 @@ fdroidcl download app_id
 fdroidcl search search_pattern
 # Install an app on a connected device:
 fdroidcl install app_id
+# Add a repository:
+fdroidcl repo add repo_name url
+# Remove, enable, or disable a repository:
+fdroidcl repo remove repo_name

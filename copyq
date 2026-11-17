@@ -15,3 +15,7 @@ copyq read 0 1 2
 copyq copy < file.txt
 # Copy a JPEG image into the clipboard:
 copyq copy image/jpeg < image.jpg
+# Copy a file's contents into the clipboard:
+copyq < path/to/file.txt copy
+# Copy a JPEG image into the clipboard:
+copyq < path/to/image.jpg copy image/jpeg

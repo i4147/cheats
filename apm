@@ -8,3 +8,4 @@ apm install package_name
 apm remove package_name
 # Upgrade a package/theme:
 apm upgrade package_name
+# See also: `atom`.

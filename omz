@@ -15,3 +15,5 @@ omz plugin enable|disable plugin
 omz theme list
 # Set an Oh My Zsh theme in `~/.zshrc`:
 omz theme set theme
+# List all enabled plugins:
+omz plugin list --enabled

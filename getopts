@@ -12,3 +12,4 @@ while getopts xyz opt; do case $opt in x) echo x is set;; y) echo y is set;; z) 
 while getopts :x: opt; do case $opt in x) ;; :) echo "Argument required";; ?) echo "Invalid argument" esac;; done
 # Reset `getopts`:
 OPTIND=1
+# Note: This command does not support longform options and thus using `getopt` is recommended instead.

@@ -2,3 +2,7 @@
 # This command is an alias of `docker diff`.
 # View documentation for the original command:
 tldr docker diff
+# Inspect the changes to a container since it was created:
+docker diff container
+# Display help:
+docker diff --help

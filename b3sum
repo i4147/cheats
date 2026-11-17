@@ -12,3 +12,7 @@ some_command | b3sum
 b3sum path/to/file > path/to/file.b3
 # Read and verify a file of BLAKE3 checksums:
 b3sum --check path/to/file.b3
+# Only show a message for missing files or when verification fails:
+b3sum --check --quiet path/to/file.b3
+# Check a known BLAKE3 checksum of a file:
+echo known_blake3_checksum_of_the_file path/to/file | b3sum --check

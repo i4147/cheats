@@ -19,3 +19,6 @@ hexdump -C path/to/file
 hexdump -C -nnumber_of_bytes path/to/file
 # Don't replace duplicate lines with '*':
 hexdump --no-squeezing path/to/file
+# See also: `hexyl`, `od`, `xxd`.
+# Format output using printf-like format string:
+hexdump -e 'element_format .. end_format' path/to/file

@@ -11,3 +11,13 @@ irb
 # More information: <https://docs.ruby-lang.org/en/master/IRB.html>.
 # Start the interactive shell:
 irb
+# Start the interactive shell with the simple prompt:
+irb --simple-prompt
+# Start the interactive shell without reading the configuration file:
+irb -f
+# Evaluate Ruby code read from `stdin`:
+echo "puts 'Hello world'" | irb --noecho
+# Display help:
+irb --help
+# Display version:
+irb --version

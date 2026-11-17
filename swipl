@@ -5,3 +5,9 @@ swipl
 # consult file.pl, run goal mygoal(3,foo)
 # and then halt the interpreter without entering interactive mode
 swipl -s file.pl -g "mygoal(3,foo)." -t halt.
+# Execute a command without showing any output:
+swipl --quiet -t "command"
+# Print all shell configuration variables:
+swipl --dump-runtime-variables
+# Display version:
+swipl --version

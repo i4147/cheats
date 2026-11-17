@@ -37,3 +37,4 @@ nslookup -vc -type=AXFR example.com name_server
 nslookup -type=MX -debug example.com
 # Query a given name server on a specific port number for a TXT record of the domain:
 nslookup -port=port_number -type=TXT example.com name_server
+# See also: `dig`, `resolvectl`, `host`.

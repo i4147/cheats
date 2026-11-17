@@ -7,3 +7,7 @@ chroma --lexer="python" source_file
 chroma --lexer="go" --formatter="html" source_file > html_file
 # Highlight a source file with the C++ lexer and output to an SVG, using the Monokai style:
 chroma --lexer="c++" --formatter="svg" --syle="monokai" source_file > svg_file
+# Highlight source code from `stdin` with the C++ lexer and output to an SVG file, using the Monokai style:
+command | chroma --lexer c++ --formatter svg --style monokai > path/to/target_file.svg
+# List available lexers, styles, and formatters:
+chroma --list

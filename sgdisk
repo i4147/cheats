@@ -18,3 +18,17 @@ sgdisk -l=sgdisk-sda.bak
 sgdisk -R=/dev/sdc /dev/sda
 # Randomize GUIDs (after cloning)
 sgdisk -G /dev/sdc
+# Display basic GPT partition summary data for a device:
+sudo sgdisk --print /dev/sdX
+# Wipe both GPT and MBR data structures from a device (destroys all partition information):
+sudo sgdisk --zap-all /dev/sdX
+# Convert a GPT disk to MBR format using up to four partitions:
+sudo sgdisk --gpttombr 1:2:3:4 /dev/sdX
+# Delete a partition entry by number (data in sectors remains untouched):
+sudo sgdisk --delete 1 /dev/sdX
+# Save the current in-memory GPT data (protective MBR, headers, and table) to a binary backup file:
+sudo sgdisk --backup /path/to/backup.gpt /dev/sdX
+# Load GPT data from a backup file (restoring from a non-original disk is not recommended):
+sudo sgdisk --load-backup /path/to/backup.gpt /dev/sdX
+# Verify GPT structures for CRC errors, mismatches, or inconsistencies:
+sudo sgdisk --verify /dev/sdX

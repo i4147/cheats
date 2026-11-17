@@ -32,3 +32,5 @@ ansible-galaxy init role_name
 ansible-galaxy role info username.role_name
 # Get information about a collection:
 ansible-galaxy collection info username.collection_name
+# Search for a role with various levels of verbosely (`-v` should be specified at the end):
+ansible-galaxy role search keyword -vvvvvv

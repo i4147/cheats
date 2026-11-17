@@ -10,3 +10,5 @@ minetest --server --world name
 minetest --logfile path/to/file
 # Only write errors to the console:
 minetest --quiet
+# View documentation for the original command:
+tldr luanti

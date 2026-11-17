@@ -13,3 +13,5 @@ docker exec --interactive --detach container_name command
 docker exec --interactive --tty --env variable_name=value container_name /bin/bash
 # Run a command as a specific user:
 docker exec --user user container_name command
+# View documentation for the original command:
+tldr docker container exec

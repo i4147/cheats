@@ -8,3 +8,4 @@ sudo f3fix /dev/device_name
 sudo f3fix --boot /dev/device_name
 # Specify the filesystem:
 sudo f3fix --fs-type=filesystem_type /dev/device_name
+# See also: `f3probe`, `f3write`, `f3read`.

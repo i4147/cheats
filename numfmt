@@ -11,3 +11,7 @@ numfmt --from=si 1.5K
 ls -l | numfmt --header=1 --field=5 --to=iec
 # Convert to IEC units, pad with 5 characters, left aligned:
 du -s * | numfmt --to=iec --format="%-5f"
+# Convert 1500 to 1.5K (SI Units):
+numfmt --to si 1500
+# Use appropriate conversion based on the suffix:
+numfmt --from auto 1.5Ki

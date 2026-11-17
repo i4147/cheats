@@ -14,3 +14,4 @@ btop --low-color
 btop --update 500
 # Exit `btop`:
 <q>
+# See also: `btm`, `glances`, `atop`, `htop`, `top`, `sensors`.

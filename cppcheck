@@ -16,3 +16,5 @@ cppcheck --suppress=test_id1 --suppress=test_id2 path/to/file.cpp
 cppcheck -I include/directory_1 -I include/directory_2 .
 # Check a Microsoft Visual Studio project (`*.vcxproj`) or solution (`*.sln`):
 cppcheck --project=path/to/project.sln
+# Check a given file, specifying which tests to perform (by default only errors are shown):
+cppcheck --enable error path/to/file.cpp

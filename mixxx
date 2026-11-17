@@ -13,3 +13,4 @@ mixxx --resourcePath mixxx/res/controllers --settingsPath path/to/settings-file
 mixxx --controllerDebug --resourcePath path/to/mapping-directory
 # Show command-line help:
 mixxx --help
+# See also: `lmms`.

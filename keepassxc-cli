@@ -17,3 +17,5 @@ keepassxc-cli clip --totp path/to/database_file entry_name
 keepassxc-cli diceware --words 7
 # Generate a password with 16 printable ASCII characters:
 keepassxc-cli generate --lower --upper --numeric --special --length 16
+# Search entries:
+keepassxc-cli search path/to/database_file name

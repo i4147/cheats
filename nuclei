@@ -17,3 +17,5 @@ nuclei -w path/to/nuclei-templates/workflows/wordpress-workflow.yaml -u https://
 nuclei -t path/to/nuclei-templates/http -u http://scanme.sh -v -o results
 # Run scan based on one or more [t]emplate [c]onditions:
 nuclei -tc "contains(tags, 'xss') && contains(tags, 'cve')" -u https://vulnerable.website
+# Use an AI prompt to dynamically generate a template to scan a target (projectdiscovery cloud pdcp API key needs to be configured using `nuclei -auth`):
+nuclei -u https://example.com -ai "find admin login endpoints"

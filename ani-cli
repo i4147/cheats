@@ -13,3 +13,8 @@ ani-cli -a episode_number "anime_name"
 ani-cli -c
 # Update `ani-cli`:
 ani-cli -U
+# See also: `animdl`.
+# Download a range of episodes:
+ani-cli --download --range "1 6" "anime_title"
+# Download the entire series (a range of all episodes):
+ani-cli --download --range "1 -1" "anime_title"

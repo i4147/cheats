@@ -28,3 +28,5 @@ gcc path/to/source.c -o path/to/output_executable -Ipath/to/header -Lpath/to/lib
 gcc -S path/to/source.c
 # Compile source code into an object file without linking:
 gcc -c path/to/source.c
+# Display version:
+gcc --version

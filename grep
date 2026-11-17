@@ -41,3 +41,6 @@ grep --with-filename --line-number --color=always "search_pattern" path/to/file
 grep --only-matching "search_pattern" path/to/file
 # Search `stdin` for lines that do not match a pattern:
 cat path/to/file | grep --invert-match "search_pattern"
+# See also: `rg`, `regex`.
+# Print 3 lines of [C]ontext around, [B]efore, or [A]fter each match:
+grep --context 3 "search_pattern" path/to/file

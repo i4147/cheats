@@ -11,3 +11,4 @@ file -s path/to/file
 file -k path/to/file
 # Determine the MIME encoding type of a file:
 file -i path/to/file
+# See also: `stat`.

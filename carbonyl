@@ -7,3 +7,4 @@ carbonyl
 carbonyl https://example.com
 # Exit carbonyl:
 <Ctrl c>
+# See also: `browsh`.

@@ -36,3 +36,4 @@ nkf -d --overwrite path/to/file.txt
 nkf -c --overwrite path/to/file.txt
 # Decrypt mime file and overwrite:
 nkf -m --overwrite path/to/file.txt
+# Network kanji filter: convert kanji code from one encoding to another.

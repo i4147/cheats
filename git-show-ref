@@ -9,3 +9,5 @@ git show-ref --heads
 git show-ref --tags
 # Verify that a given reference exists:
 git show-ref --verify path/to/ref
+# Show only heads references:
+git show-ref --branches

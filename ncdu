@@ -21,3 +21,4 @@ ncdu path/to/directory
 ncdu -o path/to/file
 # Exclude files that match a pattern, argument can be given multiple times to add more patterns:
 ncdu --exclude '*.txt'
+# See also: `duf`, `df`.

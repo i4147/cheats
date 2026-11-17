@@ -20,3 +20,5 @@ dosbox -eraseconf
 dosbox -erasemapper
 # Start with the options specified in the config file "dosbox.conf"
 dosbox -conf dosbox.conf
+# Exit DOSBox automatically after running a program:
+dosbox path/to/executable.exe -exit

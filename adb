@@ -16,3 +16,5 @@ adb pull path/to/device_file_or_directory path/to/local_destination_directory
 adb push path/to/local_file_or_directory path/to/device_destination_directory
 # Get a list of connected devices:
 adb devices
+# Specify which device to send commands to if there are multiple devices:
+adb -s device_id shell

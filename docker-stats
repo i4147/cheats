@@ -11,3 +11,5 @@ docker stats --format ".Name:\t.CPUPerc"
 docker stats --all
 # Disable streaming stats and only pull the current stats:
 docker stats --no-stream
+# View documentation for the original command:
+tldr docker container stats

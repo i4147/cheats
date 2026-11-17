@@ -137,3 +137,6 @@ gpg --import public.gpg
 gpg --export --armor alice@example.com
 # Export private key for alice@example.com (output to `stdout`):
 gpg --export-secret-keys --armor alice@example.com
+# See also: `sq`.
+# Import a public key from WKD (Web Key Directory) if the key isn't already in the keyring:
+gpg --locate-keys alice@example.com

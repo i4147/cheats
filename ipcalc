@@ -11,3 +11,5 @@ ipcalc -b 1.2.3.4/30
 ipcalc -n 1.2.3.4/24
 # Display geographic information about a given IP address:
 ipcalc -g 1.2.3.4
+# Split a network into specified sized blocks:
+ipcalc --split size1 size2 size3 ... 192.168.0.1

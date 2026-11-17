@@ -18,3 +18,4 @@ mvn clean package
 mvn clean -Pprofile package
 # Run a class with a main method:
 mvn exec:java -Dexec.mainClass="com.example.Main" -Dexec.args="arg1 arg2"
+# Apache Maven: build and manage Java-based projects.

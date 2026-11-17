@@ -13,3 +13,5 @@ npm dedupe --omit=optional|peer
 npm dedupe --loglevel=verbose
 # Limit deduplication to a specific package:
 npm dedupe package_name
+# Skip optional/peer dependencies during deduplication:
+npm ddp --omit optional

@@ -12,3 +12,5 @@ fnm use node_version
 fnm default node_version
 # Uninstall a given Node.js version:
 fnm uninstall node_version
+# Install Node.js LTS:
+fnm i --lts

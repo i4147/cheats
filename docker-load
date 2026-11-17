@@ -7,3 +7,5 @@ docker load < path/to/image_file.tar
 docker load --input path/to/image_file.tar
 # Load a Docker image from a specific file in quiet mode:
 docker load --quiet --input path/to/image_file.tar
+# View documentation for the original command:
+tldr docker image load

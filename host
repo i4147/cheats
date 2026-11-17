@@ -33,3 +33,4 @@ host -t field domain
 host ip_address
 # Specify an alternate DNS server to query:
 host domain 8.8.8.8
+# See also: `dig`, `resolvectl`, `nslookup`.

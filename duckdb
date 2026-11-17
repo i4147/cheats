@@ -17,3 +17,7 @@ duckdb path/to/dbfile -init path/to/script.sql
 cat path/to/source.csv | duckdb -c "COPY (FROM read_csv('/dev/stdin')) TO '/dev/stdout' WITH (FORMAT CSV, HEADER)"
 # Display help:
 duckdb -help
+# Directly query a CSV, JSON, or Parquet file using the `file` view:
+duckdb data_source.ext -c "SELECT * FROM file"
+# Start the DuckDB UI, a web interface with notebooks:
+duckdb -ui

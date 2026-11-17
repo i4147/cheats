@@ -13,3 +13,5 @@ npm stop
 npm restart
 # Run a script named `test`:
 npm test
+# List available scripts:
+npm run

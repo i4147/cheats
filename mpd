@@ -9,3 +9,4 @@ mpd --no-config
 mpd --no-daemon
 # Kill the currently running MPD session:
 mpd --kill
+# See also: `mpc`, `ncmpcpp`.

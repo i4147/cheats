@@ -15,3 +15,5 @@ hugo --buildDrafts
 hugo --destination path/to/destination
 # Build a site, start up a webserver to serve it, and automatically reload when pages are edited:
 hugo server
+# Build a site on your local IP:
+hugo server --bind local_ip --baseURL http://local_ip

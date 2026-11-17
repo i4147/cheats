@@ -17,3 +17,5 @@ ab -n 100 -T application/json -p path/to/file.json url
 ab -k url
 # Set the maximum number of seconds to spend for benchmarking:
 ab -t 60 url
+# Write the results to a CSV file:
+ab -e path/to/file.csv

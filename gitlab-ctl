@@ -13,3 +13,5 @@ sudo gitlab-ctl restart nginx
 sudo gitlab-ctl tail
 # Display the logs of a specific service:
 sudo gitlab-ctl tail nginx
+# Reconfigure the application:
+sudo gitlab-ctl reconfigure

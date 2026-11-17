@@ -5,3 +5,4 @@
 hub branch
 # Create a new branch:
 hub branch branch_name
+# See also: `git branch`.

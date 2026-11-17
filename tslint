@@ -22,3 +22,7 @@ tslint -p tsconfig.json --type-check
 tslint --version
 # Display help information about tslint and its usage
 tslint --help
+# Create TSLint config:
+tslint --init
+# Lint with the configuration file in the project root:
+tslint --project path/to/project_root

@@ -33,3 +33,6 @@ mongo --host host --port port database
 mongo --username username database --password
 # Evaluate a JavaScript expression on the database:
 mongo --eval 'JSON.stringify(db.foo.findOne())' database
+# Note: All connection options can be replaced with one string: `mongodb://user@host:port/db_name?authSource=authdb_name`.
+# Authenticate using the specified username on the specified database (you will be prompted for a password):
+mongo --host host --port port --username username --authenticationDatabase authdb_name db_name

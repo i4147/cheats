@@ -4,3 +4,10 @@
 # More information: <https://www.gnu.org/software/coreutils/nice>.
 # Launch a program with altered priority:
 nice -n niceness_value command
+# Note: Some modern schedulers ignore niceness or limit its effects inside autogroups.
+# Print the current niceness value:
+nice
+# Increment the current niceness value by 10:
+nice nice
+# Launch a program with heightened priority:
+sudo nice --niceness_value command

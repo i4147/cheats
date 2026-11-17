@@ -14,3 +14,5 @@ docker update --memory limitM container_name
 docker update --pids-limit count container_name
 # Update the amount of memory in [M]egabytes a specific container can swap to disk (use `-1` for unlimited):
 docker update --memory-swap limitM container_name
+# View documentation for the original command:
+tldr docker container update

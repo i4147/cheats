@@ -18,3 +18,7 @@ gitui --workdir path/to/directory
 gitui --help
 # Display version:
 gitui --version
+# Start `gitui` for the repository in the current directory:
+gitui
+# Store logging output into a specific file:
+gitui --logfile path/to/file

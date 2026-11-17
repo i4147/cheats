@@ -7,3 +7,4 @@ basename path/to/file
 basename path/to/directory/
 # Show only the file name from a path, with a suffix removed:
 basename path/to/file suffix
+# See also: `dirname`.

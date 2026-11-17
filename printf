@@ -24,3 +24,12 @@ printf '%3d\n' 12
 # Set a field's spacing by using an integer provided as a variable. This is
 # incredibly useful when you're dealing with inconsistent field lengths.
 printf '%*s\n' $Integer 'Example Field'
+# See also: `echo`.
+# Print a text message:
+printf "%s\n" "Hello world"
+# Print formatted message multiple times with different strings:
+printf "%s\n" string1 string2 ...
+# Print a text message composed with environment variables:
+printf "var1: %s\tvar2: %s\n" "$VAR1" "$VAR2"
+# Print a hexadecimal, octal, and scientific number:
+printf "hex=%x octal=%o scientific=%e\n" 0xFF 0377 100000

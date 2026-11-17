@@ -17,3 +17,5 @@ git diff --summary commit
 git diff branch_1..branch_2 [--] path/to/file
 # Compare different files from the current branch to other branch:
 git diff branch:path/to/file2 path/to/file
+# Show diff statistics, like files changed, histogram, and total line insertions/deletions:
+git diff --stat commit

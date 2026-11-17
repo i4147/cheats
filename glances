@@ -11,3 +11,6 @@ glances -s
 glances -c hostname
 # Require a password in (web) server mode:
 glances -s --password
+# See also: `htop`, `atop`, `top`, `btm`, `btop`.
+# Exit Glances:
+<q>

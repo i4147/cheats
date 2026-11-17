@@ -11,3 +11,11 @@ deno run --allow-net path/to/file.ts
 deno run https://deno.land/std/examples/welcome.ts
 # Install an executable script from a URL:
 deno install https://deno.land/std/examples/colors.ts
+# Start a new project named sample and test it:
+deno init sample && cd sample && deno test
+# List and run tasks from `deno.json` or scripts from `package.json`:
+deno task
+# Check types, format, and lint (fix if possible):
+deno check && deno fmt && deno lint --fix
+# Compile the script, imported dependencies, and runtime into a self contained executable:
+deno compile path/to/file.ts

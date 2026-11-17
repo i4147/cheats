@@ -14,3 +14,4 @@ atom --safe
 atom --foreground
 # Wait for Atom window to close before returning (useful for Git commit editor):
 atom --wait
+# Note: Atom has been sunsetted and is no longer actively maintained. Use `zed` instead.

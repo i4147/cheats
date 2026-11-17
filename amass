@@ -10,3 +10,5 @@ amass -help
 amass -help subcommand
 # Display version:
 amass -version
+# Display help on an Amass subcommand:
+amass intel -help

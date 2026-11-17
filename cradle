@@ -10,3 +10,15 @@ cradle help
 cradle command help
 # Execute a Cradle command:
 cradle command
+# Install Cradle components (prompts for additional info):
+cradle install
+# Force install and overwrite files:
+cradle install --force
+# Display the current Cradle configuration:
+cradle config show
+# Install a package into the current Cradle instance:
+cradle package install package_name
+# List installed packages:
+cradle package list
+# Display version:
+cradle --version

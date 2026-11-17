@@ -17,3 +17,10 @@ http -v https://example.com
 http --download https://example.com
 # Follow redirects and show intermediary requests and responses:
 http --follow --all https://example.com
+# See also: `http`.
+# Check updates for `http`:
+httpie cli check-updates
+# List installed `http` plugins:
+httpie cli plugins list
+# Install/upgrade/uninstall plugins:
+httpie cli plugins install plugin_name

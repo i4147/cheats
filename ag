@@ -25,3 +25,13 @@ ag foo -G bar
 ag '^ba(r|z)$'
 # Find files with a name matching "foo":
 ag -g foo
+# Find files containing `string`, and print the line matches in context:
+ag string
+# Find files containing `string` in a specific directory:
+ag string path/to/directory
+# Find files containing `string`, but only list the filenames:
+ag --files-with-matches string
+# Find files containing `STRING` case-insensitively, and print only the match, rather than the whole line:
+ag --ignore-case --only-matching STRING
+# Find `string` in files with a name matching `file_name`:
+ag string --file-search-regex file_name

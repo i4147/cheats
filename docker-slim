@@ -11,3 +11,5 @@ docker-slim lint --target path/to/Dockerfile
 docker-slim build image:tag
 # Display help for a subcommand:
 docker-slim subcommand --help
+# View documentation for the original command:
+tldr slim

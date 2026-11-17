@@ -26,3 +26,7 @@ xo --extension=jsx
 xo --help
 # Display the version number of XO
 xo --version
+# Lint using spaces as indentation instead of tabs:
+xo --space
+# Lint using the "prettier" code style:
+xo --prettier

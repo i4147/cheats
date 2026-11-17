@@ -16,3 +16,5 @@ git stage -p
 git stage -p path/to/file
 # Interactively stage a file:
 git stage -i
+# View documentation for the original command:
+tldr git add

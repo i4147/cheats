@@ -1,7 +1,15 @@
-<html>
-<head><title>400 Bad Request</title></head>
-<body>
-<center><h1>400 Bad Request</h1></center>
-<hr><center>nginx/1.18.0 (Ubuntu)</center>
-</body>
-</html>
+# %
+# Manage jobs.
+# More information: <https://www.gnu.org/software/bash/manual/bash.html#Job-Control-Basics>.
+# Bring the current job to front:
+%
+# Bring the previous job to front:
+%-
+# Bring the job number `n` to front:
+%n
+# Bring a job whose command starts with `string` to front:
+%string
+# Bring a job whose command contains `string` to front:
+%?string
+# Resume a suspended job:
+%1 &

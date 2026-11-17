@@ -7,3 +7,5 @@ docker tag id name:tag
 docker tag image:current_tag image:new_tag
 # Display help:
 docker tag
+# View documentation for the original command:
+tldr docker image tag

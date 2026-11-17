@@ -75,3 +75,6 @@ ffmpeg -i input_video.avi -codec:a aac -b:a 128k -codec:v libx264 -crf 23 output
 ffmpeg -i input_video.mkv -codec copy output_video.mp4
 # Convert MP4 video to VP9 codec. For the best quality, use a CRF value (recommended range 15-35) and -b:v MUST be 0:
 ffmpeg -i input_video.mp4 -codec:v libvpx-vp9 -crf 30 -b:v 0 -codec:a libopus -vbr on -threads number_of_threads output_video.webm
+# See also: `gst-launch-1.0`.
+# Transcode a FLAC file to Red Book CD format (44100kHz, 16bit):
+ffmpeg -i path/to/input_audio.flac -ar 44100 -sample_fmt s16 path/to/output_audio.wav

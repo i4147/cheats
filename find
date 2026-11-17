@@ -177,3 +177,8 @@ find root_path -name '*.ext' -exec wc -l {} \;
 find root_path -daystart -mtime -7
 # Find empty (0 byte) files and delete them:
 find root_path -type f -empty -delete
+# See also: `fd`.
+# Find all files modified today and pass the results to a single command as arguments:
+find path/to/directory -daystart -mtime -1 -exec tar -cvf archive.tar {} \+
+# Search for either empty files or directories and delete them verbosely:
+find path/to/directory -type f -empty -delete -print

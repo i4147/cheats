@@ -10,3 +10,5 @@ source FILE
 . FILE
 #  Source FILE with the given arguments to said file.
 source FILE Argument_1 Argument_2 Argument_3 ...
+# Search and evaluate a file in a given set of directories:
+source -p path/to/directory1:path/to/directory2:... file

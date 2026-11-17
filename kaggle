@@ -5,3 +5,15 @@
 kaggle config view
 # Download a specific file from a competition dataset:
 kaggle competitions download competition -f filename
+# List competitions matching a search term:
+kaggle c list --search search_term
+# List files available for a specific competition:
+kaggle c files competition
+# Submit a file to a competition with a message:
+kaggle c submit competition --file path/to/submission.csv --message "message"
+# List datasets matching a search term:
+kaggle d list --search search_term
+# Download all files from a dataset:
+kaggle d download owner/dataset_name
+# List kernels (notebooks) matching a search term:
+kaggle k list --search search_term

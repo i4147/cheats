@@ -15,3 +15,6 @@ nano --softwrap path/to/file
 nano --autoindent path/to/file
 # Open a file and create a backup file (`path/to/file~`) on save:
 nano --backup path/to/file
+# See also: `pico`, `rnano`.
+# Exit nano:
+<Ctrl x>

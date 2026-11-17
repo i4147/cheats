@@ -14,3 +14,4 @@ tailpod
 execpod shell_command
 # Port-forward a pod:
 pfpod port_number
+# See also: `kubectl`.

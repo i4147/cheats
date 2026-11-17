@@ -14,3 +14,5 @@ mpc next
 mpc prev
 # Forward or rewind the currently playing song:
 mpc [+-]seconds
+# Music Player Client: control the Music Player Daemon (MPD).
+# See also: `mpd`, `ncmpcpp`, `cmus`.

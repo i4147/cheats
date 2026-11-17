@@ -44,3 +44,7 @@ objdump -d binary
 objdump -M intel -d binary
 # Display a complete binary hex dump of all sections:
 objdump -s binary
+# Display the disassembled executable sections in Intel syntax:
+objdump --disassemble path/to/binary --disassembler-options intel
+# Display the disassembled executable sections with jump visualizations and syntax highlighting:
+objdump --disassemble path/to/binary --visualize-jumps=color --disassembler-color=color

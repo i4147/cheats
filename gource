@@ -14,3 +14,9 @@ gource -s seconds
 gource -f -b hex_color_code
 # Set a title for the animation:
 gource --title title
+# Highlight the name of a specific user:
+gource --follow-user user_name
+# Pause the animation:
+<Space>
+# Adjust simulation speed and timescale:
+<+>

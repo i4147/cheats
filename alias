@@ -22,3 +22,4 @@ unalias word
 alias rm="rm --interactive"
 # Create `la` as a shortcut for `ls --all`:
 alias la="ls --all"
+# See also: `unalias`.

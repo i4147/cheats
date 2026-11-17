@@ -18,3 +18,4 @@ mamba clean -pt
 mamba activate environment_name
 # List all installed packages in the currently activated environment:
 mamba list
+# See also: `conda`.

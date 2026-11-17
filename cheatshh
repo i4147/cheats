@@ -16,3 +16,4 @@ cheatshh --edit-group
 cheatshh --delete-group
 # Display [m]an pages after tldr in the preview:
 cheatshh --man
+# See also: `tldr`, `cheat`, `navi`.

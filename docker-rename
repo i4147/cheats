@@ -5,3 +5,5 @@
 docker rename container new_name
 # Display help:
 docker rename --help
+# View documentation for the original command:
+tldr docker container rename

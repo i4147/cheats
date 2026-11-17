@@ -13,3 +13,4 @@ azcopy copy 'https://source_storage_account_name.blob.core.windows.net/container
 azcopy sync 'path\to\source_directory' 'https://storage_account_name.blob.core.windows.net/container_name' --recursive --delete-destination=true
 # Display detailed usage information:
 azcopy --help
+# See also: `az storage`.

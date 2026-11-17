@@ -11,3 +11,5 @@ docker pull --all-tags image
 docker pull --platform linux/amd64 image:tag
 # Display help:
 docker pull --help
+# View documentation for the original command:
+tldr docker image pull

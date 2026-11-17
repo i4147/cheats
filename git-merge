@@ -9,3 +9,7 @@ git merge -e branch_name
 git merge --no-ff branch_name
 # Abort a merge in case of conflicts:
 git merge --abort
+# Stage the result of merging a branch without creating a commit:
+git merge --squash branch_name
+# Merge using a specific strategy:
+git merge --strategy strategy --strategy-option strategy_option branch_name

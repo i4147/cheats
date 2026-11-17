@@ -11,3 +11,9 @@ crystal play
 crystal init app application_name
 # Display all help options:
 crystal help
+# Read Crystal source code from the command-line or `stdin`, and execute it:
+crystal eval 'code'
+# Generate API documentation from inline docstrings in Crystal files:
+crystal docs
+# Compile and run a Crystal specification suite:
+crystal spec

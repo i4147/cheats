@@ -7,3 +7,5 @@ ld path/to/file.o --output path/to/output_executable
 ld path/to/file1.o path/to/file2.o --output path/to/output_executable
 # Dynamically link an x86_64 program to glibc (file paths change depending on the system):
 ld --output path/to/output_executable --dynamic-linker /lib/ld-linux-x86-64.so.2 /lib/crt1.o /lib/crti.o -lc path/to/file.o /lib/crtn.o
+# Link an object file to a specific target emulation:
+ld path/to/file.o -m target_emulation --output path/to/output_executable

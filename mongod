@@ -7,3 +7,5 @@ mongod --config path/to/file
 mongod --port port
 # Specify database profiling level. 0 is off, 1 is only slow operations, 2 is all:
 mongod --profile 0|1|2
+# Specify the storage directory (default: `/data/db` on Linux and macOS, `C:\data\db` on Windows):
+mongod --dbpath path/to/directory

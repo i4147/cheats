@@ -18,3 +18,4 @@ ember test
 ember generate type name
 # Install an ember-cli addon:
 ember install name_of_addon
+# Ember CLI: create and manage Ember.js applications.

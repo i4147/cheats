@@ -14,3 +14,4 @@ fastd --generate-key
 fastd --show-key --config path/to/fastd.conf
 # Show the current version::
 fastd -v
+# See also: `ivpn`, `mozillavpn`, `mullvad`, `warp-cli`.

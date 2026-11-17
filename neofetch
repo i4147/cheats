@@ -9,3 +9,5 @@ neofetch --enable|disable infoname
 neofetch --os_arch on|off
 # Enable/Disable CPU brand in output:
 neofetch --cpu_brand on|off
+# Note: `neofetch` is no longer maintained.
+# See also: `fastfetch`.

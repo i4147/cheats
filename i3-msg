@@ -4,3 +4,7 @@
 i3-msg 'reload'
 # Restart i3wm.
 i3-msg 'restart'
+# Print a list of workspaces in JSON:
+i3-msg -t get_workspaces
+# Print a layout tree of all open windows, containers, outputs, and workspaces in JSON:
+i3-msg -t get_tree

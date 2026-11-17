@@ -18,3 +18,5 @@ minetestserver --port 34567
 minetestserver --migrate sqlite3|leveldb|redis
 # Start an interactive terminal after starting the server:
 minetestserver --terminal
+# View documentation for the original command:
+tldr luanti

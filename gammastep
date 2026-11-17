@@ -13,3 +13,4 @@ gammastep -g red:green:blue
 gammastep -O temperature
 # Reset temperature adjustments applied by Gammastep:
 gammastep -x
+# See also: `redshift`.

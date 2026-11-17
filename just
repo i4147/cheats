@@ -11,3 +11,7 @@ just -e
 just -l
 # Print justfile:
 just --dump
+# View documentation for the command runner:
+tldr just.1
+# View documentation for the V8 JavaScript runtime:
+tldr just.js

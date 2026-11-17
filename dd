@@ -73,3 +73,5 @@ dd if=/dev/zero of=path/to/file_1GB bs=1024 count=1000000
 dd if=/dev/drive_device of=path/to/file.img
 # Restore a drive from an IMG file:
 dd if=path/to/file.img of=/dev/drive_device
+# Clone a drive to another drive with 4 MiB block size and flush writes before the command terminates:
+dd bs=4194304 conv=fsync if=/dev/source_drive of=/dev/dest_drive

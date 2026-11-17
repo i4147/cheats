@@ -18,3 +18,5 @@ magick convert path/to/image1.png path/to/image2.png ... -delay 10 path/to/anima
 magick convert -size 800x600 "xc:#ff0000" path/to/image.png
 # Create a favicon from several images of different sizes:
 magick convert path/to/image1.png path/to/image2.png ... path/to/favicon.ico
+# Vertically/horizontally append images and have the empty space be transparent:
+magick convert -background none path/to/image1.png path/to/image2.png ... -append path/to/output_image.png

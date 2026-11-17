@@ -31,3 +31,7 @@ jc ifconfig
 ifconfig | jc --ifconfig -p
 # Output pretty JSON via magic syntax:
 jc -p ifconfig
+# View documentation for the `JSON` serializer:
+tldr jc.json
+# View documentation for the `autojump` alias:
+tldr autojump

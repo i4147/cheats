@@ -31,3 +31,4 @@ auditd
 auditd -d
 # Start the daemon on-demand from launchd:
 auditd -l
+# Note: It should not be invoked manually.

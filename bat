@@ -26,3 +26,4 @@ bat --number path/to/file
 bat --language json file.json
 # Display all supported languages:
 bat --list-languages
+# See also: `cat`.

@@ -312,3 +312,11 @@ git subcommand
 git -C path/to/repo subcommand
 # Execute a Git subcommand with a given configuration set:
 git -c 'config.key=value' subcommand
+# Create an empty Git repository:
+git init
+# View the status of the local repository:
+git status
+# Pull any changes made to a remote:
+git pull
+# Reset everything the way it was in the latest commit:
+git reset --hard; git clean --force

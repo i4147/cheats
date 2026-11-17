@@ -5,3 +5,7 @@
 enable
 # Disable a builtin (works in `bash` only):
 enable -n command
+# Load a new builtin from a shared object:
+enable -f path/to/file.so builtin_name
+# Display help:
+help enable

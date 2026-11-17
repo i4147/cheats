@@ -8,3 +8,4 @@ git format-patch origin
 git format-patch revision_1..revision_2
 # Write a `.patch` file for the 3 latest commits:
 git format-patch -3
+# See also: `git am`.

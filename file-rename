@@ -12,3 +12,5 @@ rename -f 's/foo/bar/' *
 rename 'y/A-Z/a-z/' *
 # Replace whitespace with underscores:
 rename 's/\s+/_/g' *
+# View documentation for the original command:
+tldr --platform common rename

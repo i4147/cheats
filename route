@@ -16,3 +16,9 @@ route add -host {destination-host} gw {gateway} {interface}
 route change -net {network} netmask {netmask} gw {gateway} {interface} metric {metric}
 # Show the routing table continuously with a delay
 watch -n 1 route -n
+# Display the information of route table:
+route -n
+# Add route rule:
+sudo route add -net ip_address netmask netmask_address gw gw_address
+# Delete route rule:
+sudo route del -net ip_address netmask netmask_address dev gw_address

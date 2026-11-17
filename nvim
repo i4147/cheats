@@ -19,3 +19,4 @@ nvim path/to/file
 <Esc>:wq<Enter>
 # Quit without saving:
 <Esc>:q!<Enter>
+# See also: `vim`, `vimtutor`, `vimdiff`.
