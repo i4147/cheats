@@ -1,0 +1,40 @@
+cheat:irssi
+# To connect to an IRC server:
+/connect <server>
+# To join a channel:
+/join #<channel>
+# To set a nickname:
+/nick <nickname>
+# To send a private message to a user:
+/msg <nickname>
+# To close the current channel window:
+/wc
+# To switch between channel windows:
+ALT+<number>, eg. ALT+1, ALT+2
+# To list the nicknames within the active channel:
+/names
+# To change the channel topic:
+/topic <description>
+# To limit channel background noise (joins, parts, quits, etc.):
+/ignore #foo,#bar JOINS PARTS QUITS NICKS   # Quieten only channels `#foo`, `#bar`
+/ignore * JOINS PARTS QUITS NICKS           # Quieten all channels
+# To save the current Irssi session config into the configuration file:
+/save
+# To quit Irssi:
+/exit
+ tldr:irssi
+# irssi
+# Text based IRC client.
+# More information: <https://irssi.org>.
+# Open Irssi and connect to a server with a nickname:
+irssi -n nickname -c irc.example.com
+# Open Irssi and connect with a specific server on a given port:
+irssi -c irc.example.com -p port
+# View the help:
+irssi --help
+# Join a channel:
+/join #channelname
+# Change active window (starts at 1):
+/win window_number
+# Exit the application cleanly and quitting any server(s):
+/quit

@@ -1,0 +1,26 @@
+cheat.sheets:extundelete
+# extundelete
+# Utility to recover deleted files from ext3/ext4 partition
+# Recover a file in '/home/UserName', assuming '/home' is on its own partition
+extundelete /dev/sda4 --restore-file UserName/SomeDirectory
+# Recover an entire directory
+extundelete /dev/sda4 --restore-directory UserName/SomeDirectory
+# For advanced users, to manually recover blocks or inodes with extundelete,
+# `debugfs` can be used to find the inode to be recovered; additional inodes
+# to recover can be listed in an unspaced, comma-separated fashion.
+extundelete --restore-inode inode
+# recover all deleted files from an entire partition
+extundelete /dev/sda4 --restore-all
+ tldr:extundelete
+# extundelete
+# Recover deleted files from ext3 or ext4 partitions by parsing the journal.
+# See also `date` for Unix time information and `umount` for unmounting partitions.
+# More information: <http://extundelete.sourceforge.net>.
+# Restore all deleted files inside partition N on device X:
+sudo extundelete /dev/sdXN --restore-all
+# Restore a file from a path relative to root (Do not start the path with `/`):
+extundelete /dev/sdXN --restore-file path/to/file
+# Restore a directory from a path relative to root (Do not start the path with `/`):
+extundelete /dev/sdXN --restore-directory path/to/directory
+# Restore all files deleted after January 1st, 2020 (in Unix time):
+extundelete /dev/sdXN --restore-all --after 1577840400

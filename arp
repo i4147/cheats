@@ -1,0 +1,23 @@
+cheat.sheets:arp
+# arp
+# Display or manipulate the ARP cache.
+# Display the current ARP cache
+arp -a
+# Display the ARP entry for a specific host
+arp -a <hostname_or_ip>
+# Add a static ARP entry
+sudo arp -s <ip_address> <mac_address>
+# Delete a specific ARP entry
+sudo arp -d <hostname_or_ip>
+# Set the ARP timeout value
+sudo arp -v -t <seconds>
+ tldr:arp
+# arp
+# Show and manipulate your system's ARP cache.
+# More information: <https://manned.org/arp>.
+# Show the current ARP table:
+arp -a
+# Delete a specific entry:
+arp -d address
+# Create an entry in the ARP table:
+arp -s address mac_address

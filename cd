@@ -1,0 +1,29 @@
+cheat:cd
+# Go to the given directory:
+cd path/to/directory
+# Go to home directory of current user:
+cd
+# Go up to the parent of the current directory:
+cd ..
+# Go to the previously chosen directory:
+cd -
+# Go to a physical dir instead of default -L:
+cd -P path/to/dir
+# Some people alias cd="cd -P" and pwd="pwd -P"
+# So that `ls ..` and `cd ..; ls .` yield the same thing.
+ tldr:cd
+# cd
+# Change the current working directory.
+# More information: <https://manned.org/cd>.
+# Go to the specified directory:
+cd path/to/directory
+# Go up to the parent of the current directory:
+cd ..
+# Go to the home directory of the current user:
+cd
+# Go to the home directory of the specified user:
+cd ~username
+# Go to the previously chosen directory:
+cd -
+# Go to the root directory:
+cd /

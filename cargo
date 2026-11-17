@@ -1,0 +1,71 @@
+cheat.sheets:cargo
+# cargo
+# The Rust package manager.
+# Cargo downloads your Rust project's dependencies,
+# compiles your project, makes packages, and upload them to crates.io
+# See also: https://doc.rust-lang.org/cargo/
+# Build the current project
+cargo build
+# Build the project in release mode
+cargo build --release
+# Run the current project
+cargo run
+# Run the current project with arguments
+cargo run -- arg1 arg2
+# Test the current project
+cargo test
+# Check the code to make sure it compiles, without producing an executable
+cargo check
+# Create a new package/project
+cargo new hello_world --bin     # program
+cargo new hello_world --lib     # library
+# Create a new package/project in the current directory
+cargo init
+# Update dependencies listed in Cargo.lock
+cargo update
+cargo update -p rand    # updates just “rand” crate
+# Search for a package in the registry
+cargo search keyword
+# Add a new dependency to Cargo.toml
+cargo add package_name
+# Remove a dependency from Cargo.toml
+cargo remove package_name
+# List installed binary packages
+cargo install --list
+# Install a binary package
+cargo install package_name
+# Uninstall a binary package
+cargo uninstall package_name
+# Generate documentation for the project and open it in a browser
+cargo doc --open
+# Publish a package to the registry
+cargo publish
+# Run a specific binary from a project with multiple binaries
+cargo run --bin binary_name
+# Run a specific example
+cargo run --example example_name
+# Run tests with verbose output
+cargo test -- --nocapture
+# Clean up build files
+cargo clean
+ tldr:cargo
+# cargo
+# Manage Rust projects and their module dependencies (crates).
+# Some subcommands such as `cargo build` have their own usage documentation.
+# More information: <https://crates.io>.
+# Search for crates:
+cargo search search_string
+# Install a crate:
+cargo install crate_name
+# List installed crates:
+cargo install --list
+# Create a new binary or library Rust project in the current directory:
+cargo init --bin|lib
+# Create a new binary or library Rust project in the specified directory:
+cargo new path/to/directory --bin|lib
+# Build the Rust project in the current directory:
+cargo build
+# Build the rust project in the current directory using the nightly compiler:
+cargo +nightly build
+# Build using a specific number of threads (default is the number of CPU cores):
+cargo build --jobs number_of_threads

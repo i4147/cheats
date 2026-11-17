@@ -1,0 +1,36 @@
+cheat:fzf
+# To fuzzy find files in current directory
+fzf
+# To fuzzy find a file and cat it
+cat $(fzf)
+# Case sensitive search
+fzf +i
+# Case insensitve search
+fzf -i
+# Select multiple files (TAB to select, Shift+TAB to un-select) to delete
+rm -rf $(fzf --multi)
+# Run a preview command with fzf, specifiy a command inside the double quotes.
+fzf --preview "file {}"
+# Find files from find command and preview it with fzf
+find . -type f -name "*.txt" | fzf --preview "head {}"
+# Display border around fzf output
+fzf --border sharp
+# Output only selected files and pipe it to a file
+find . -type f "*.txt" | fzf --multi > output.txt
+ tldr:fzf
+# fzf
+# Command-line fuzzy finder.
+# Similar to `sk`.
+# More information: <https://github.com/junegunn/fzf>.
+# Start fzf on all files in the specified directory:
+find path/to/directory -type f | fzf
+# Start fzf for running processes:
+ps aux | fzf
+# Select multiple files with `Shift + Tab` and write to a file:
+find path/to/directory -type f | fzf --multi > path/to/file
+# Start fzf with a specified query:
+fzf --query "query"
+# Start fzf on entries that start with core and end with either go, rb, or py:
+fzf --query "^core go$ | rb$ | py$"
+# Start fzf on entries that not match pyc and match exactly travis:
+fzf --query "!pyc 'travis"

@@ -1,0 +1,28 @@
+cheat.sheets:dpkg-deb
+# dpkg-deb
+# Debian package archive (.deb) manipulation tool
+# Build a DEB package using the provided directory.
+dpkg-deb -b /path/to/directory
+# List out the contents of an existing DEB package.
+dpkg-deb -c /path/to/package.deb
+# Extract the contents of an existing DEB package. If no destination is
+# provided for the extracted files, then they will be extracted to the CWD.
+# Will also create the specified directory if it's not found, but it won't
+# create its parents.
+dpkg-deb -x /path/to/package.deb /path/to/destination/
+# Output (unique) list of available sections under which to create DEB package.
+awk '!A[$1]++{print($1)}' <<< "$(dpkg-query --show -f='${Section}\n')"
+ tldr:dpkg-deb
+# dpkg-deb
+# Pack, unpack and provide information about Debian archives.
+# More information: <https://manpages.debian.org/latest/dpkg/dpkg-deb.html>.
+# Display information about a package:
+dpkg-deb --info path/to/file.deb
+# Display the package's name and version on one line:
+dpkg-deb --show path/to/file.deb
+# List the package's contents:
+dpkg-deb --contents path/to/file.deb
+# Extract package's contents into a directory:
+dpkg-deb --extract path/to/file.deb path/to/directory
+# Create a package from a specified directory:
+dpkg-deb --build path/to/directory

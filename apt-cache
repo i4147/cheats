@@ -1,0 +1,41 @@
+cheat.sheets:apt-cache
+# apt-cache
+# Query the APT cache
+# Search for package PKG. Both package names and their descriptions are
+# searched for a REGEX match; to avoid this behavior, you may use the `-n`
+# flag, which will only look for a match in the package name.
+apt-cache search 'PKG'
+# Regarding the above, although multiple package names may not be specified, -
+# it's possible to use ERE to easily and quickly get around this limitation.
+# Here, all 3 packages (PKG1, PKG2, and PKG3) will be sought.
+apt-cache search '(PKG1|PKG2|PKG3)'
+ cheat:apt-cache
+---
+tags: [ packaging ]
+---
+# To find packages matching <phrase>:
+apt-cache search <phrase>
+# To display package records for the named package(s):
+apt-cache show <package>...
+# To display reverse dependencies of a package:
+apt-cache rdepends <package>
+# To display package versions, reverse dependencies and forward dependencies of
+# a package:
+apt-cache showpkg <package>
+# To display package installation status and what version is available from
+# its repository:
+apt-cache policy <package>
+ tldr:apt-cache
+# apt-cache
+# Debian and Ubuntu package query tool.
+# More information: <https://manpages.debian.org/latest/apt/apt-cache.8.html>.
+# Search for a package in your current sources:
+apt-cache search query
+# Show information about a package:
+apt-cache show package
+# Show whether a package is installed and up to date:
+apt-cache policy package
+# Show dependencies for a package:
+apt-cache depends package
+# Show packages that depend on a particular package:
+apt-cache rdepends package

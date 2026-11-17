@@ -1,0 +1,27 @@
+cheat.sheets:dict
+# dict
+# dictd - Client/server software, human language dictionary databases, and tools supporting the DICT protocol
+# List available dictionary databases
+dict -D
+# Get information about a dictionary database (e.g. moby-thesaurus)
+dict -i moby-thesaurus
+# Look up "use" in Moby-Thesaurus database
+dict -d moby-thesaurus use
+# Look up "perceive" in all available dictionary databases
+dict perceive
+# List all the available dictionaries server and their info
+dict -I
+ tldr:dict
+# dict
+# Command line dictionary using the DICT protocol.
+# More information: <https://github.com/cheusov/dictd>.
+# List available databases:
+dict -D
+# Get information about a database:
+dict -i database_name
+# Look up a word in a specific database:
+dict -d database_name word
+# Look up a word in all available databases:
+dict word
+# Show information about the DICT server:
+dict -I

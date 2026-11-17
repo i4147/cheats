@@ -1,0 +1,38 @@
+cheat:nkf
+# To check the file's charactor code:
+nkf -g <file>
+# To convert charactor code to UTF-8:
+nkf -w --overwrite <file>
+# To convert charactor code to EUC-JP:
+nkf -e --overwrite <file>
+# To convert charactor code to Shift-JIS:
+nkf -s --overwrite <file>
+# To convert charactor code to ISO-2022-JP:
+nkf -j --overwrite <file>
+# To convert newline to LF:
+nkf -Lu --overwrite <file>
+# To convert newline to CRLF:
+nkf -Lw --overwrite <file>
+# To convert newline to CR:
+nkf -Lm --overwrite <file>
+# To MIME encode:
+echo テスト | nkf -WwMQ
+# To MIME decode:
+echo "=E3=83=86=E3=82=B9=E3=83=88" | nkf -WwmQ
+ tldr:nkf
+# nkf
+# Network kanji filter.
+# Converts kanji code from one encoding to another.
+# More information: <https://manned.org/nkf>.
+# Convert to UTF-8 encoding:
+nkf -w path/to/file.txt
+# Convert to SHIFT_JIS encoding:
+nkf -s path/to/file.txt
+# Convert to UTF-8 encoding and overwrite the file:
+nkf -w --overwrite path/to/file.txt
+# Set new line code to LF and overwrite (UNIX type):
+nkf -d --overwrite path/to/file.txt
+# Set new line code to CRLF and overwrite (windows type):
+nkf -c --overwrite path/to/file.txt
+# Decrypt mime file and overwrite:
+nkf -m --overwrite path/to/file.txt

@@ -1,0 +1,36 @@
+cheat.sheets:autopep8
+# autopep8
+# Automatically formats Python code to conform to the PEP 8 style guide.
+# Automatically format a Python file to conform to PEP 8
+autopep8 myfile.py
+# Format a Python file in-place (modifies the file directly)
+autopep8 --in-place myfile.py
+# Format all Python files in a directory and subdirectories recursively
+autopep8 --in-place --recursive my_directory/
+# Format a Python file and display the differences only (without changing the file)
+autopep8 --diff myfile.py
+# Aggressively apply formatting changes (can be used multiple times for more aggressive changes)
+autopep8 --aggressive myfile.py
+autopep8 --aggressive --aggressive myfile.py
+# Specify a maximum line length (default is 79)
+autopep8 --max-line-length 100 myfile.py
+# Ignore specific PEP 8 errors or warnings
+autopep8 --ignore=E501 myfile.py
+# Apply fixes for specific PEP 8 errors or warnings only
+autopep8 --select=E123,W456 myfile.py
+# Use autopep8 to format code from standard input (stdin)
+cat myfile.py | autopep8 -
+# Apply autopep8 and also output statistics about changes made
+autopep8 --in-place --verbose myfile.py
+ tldr:autopep8
+# autopep8
+# Format Python code according to the PEP 8 style guide.
+# More information: <https://github.com/hhatto/autopep8>.
+# Format a file to `stdout`, with a custom maximum line length:
+autopep8 path/to/file.py --max-line-length length
+# Format a file, displaying a diff of the changes:
+autopep8 --diff path/to/file
+# Format a file in-place and save the changes:
+autopep8 --in-place path/to/file.py
+# Recursively format all files in a directory in-place and save changes:
+autopep8 --in-place --recursive path/to/directory

@@ -1,0 +1,29 @@
+cheat.sheets:logger
+# logger
+# Interact with syslog server
+# log "hi there" to syslog with priority 'notice' and facility 'user'
+echo "hi there" | logger
+# send <file> to syslog with <facility> and <priority>
+logger -p <facility>.<level> -f <file>
+# Levels (priorities):
+#     emerg alert crit err warning notice info debug
+#
+# Facilities:
+#    auth
+#    authpriv (for security information of a sensitive nature)
+#    cron daemon ftp lpr mail news syslog user uucp
+#    local0 to local7 (local7 is used for boot messages)
+ tldr:logger
+# logger
+# Add messages to syslog (/var/log/syslog).
+# More information: <https://manned.org/logger>.
+# Log a message to syslog:
+logger message
+# Take input from `stdin` and log to syslog:
+echo log_entry | logger
+# Send the output to a remote syslog server running at a given port. Default port is 514:
+echo log_entry | logger --server hostname --port port
+# Use a specific tag for every line logged. Default is the name of logged in user:
+echo log_entry | logger --tag tag
+# Log messages with a given priority. Default is `user.notice`. See `man logger` for all priority options:
+echo log_entry | logger --priority user.warning

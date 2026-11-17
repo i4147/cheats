@@ -1,0 +1,21 @@
+cheat:jobs
+# To see the background running commands:
+jobs
+# To see the background running commands with PID:
+jobs -l
+# To see the running jobs only:
+jobs -r
+# To see stopped jobs only:
+jobs -s
+ tldr:jobs
+# jobs
+# Display status of jobs in the current session.
+# More information: <https://manned.org/jobs>.
+# Show status of all jobs:
+jobs
+# Show status of a particular job:
+jobs %job_id
+# Show status and process IDs of all jobs:
+jobs -l
+# Show process IDs of all jobs:
+jobs -p

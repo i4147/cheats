@@ -1,0 +1,42 @@
+cheat.sheets:lvs
+# lvs
+# Display information about logical volumes in concise form.
+# Display basic information about all logical volumes
+lvs
+# Display logical volume information with more details (use long listing format)
+lvs -v
+# Display logical volume information with units (e.g., KB, MB, GB)
+lvs --units g
+# Show all logical volumes sorted by size
+lvs --sort lv_size
+# Filter to display only logical volumes that belong to a specific volume group
+lvs my_volume_group
+# Display logical volumes in a columnar format, specifically showing only the volume size
+lvs --options lv_size
+# Suppress headings in the output for easier parsing
+lvs --noheadings
+# Display only active logical volumes
+lvs --select 'lv_active==active'
+# Display logical volumes with their attributes
+lvs --segments
+# Show logical volumes and their metadata in JSON format
+lvs --reportformat json
+ tldr:lvs
+# lvs
+# Display information about logical volumes.
+# See also: `lvm`.
+# More information: <https://man7.org/linux/man-pages/man8/lvs.8.html>.
+# Display information about logical volumes:
+lvs
+# Display all logical volumes:
+lvs -a
+# Change default display to show more details:
+lvs -v
+# Display only specific fields:
+lvs -o field_name_1,field_name_2
+# Append field to default display:
+lvs -o +field_name
+# Suppress heading line:
+lvs --noheadings
+# Use a separator to separate fields:
+lvs --separator =

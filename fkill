@@ -1,0 +1,17 @@
+cheat:fkill
+# To kill a process by pid
+fkill 1337
+# To kill processes by name (case insensitive)
+fkill safari
+# To kill a process listening on a port
+fkill :8080
+# To run the interactive interface
+fkill
+ tldr:fkill
+# fkill
+# Fabulously kill processes. Cross-platform.
+# More information: <https://github.com/sindresorhus/fkill>.
+# Run without arguments to use the interactive interface:
+fkill
+# Kill the process by PID, name or port:
+fkill pid|name|:port

@@ -1,0 +1,60 @@
+cheat.sheets:black
+# black
+# The uncompromising code formatter for Python that reformats entire files in place.
+# Format a single Python file
+black script.py
+# Format all Python files in a directory (recursively)
+black /path/to/directory
+# Check what files would be reformatted without making any changes
+black --check /path/to/directory
+# Display verbose output during formatting
+black --verbose script.py
+# Limit line length to a specified number of characters
+black --line-length 79 script.py
+# Skip nested .gitignore files
+black --skip-nested-glob-imports /path/to/directory
+# Use a specific configuration file
+black --config pyproject.toml script.py
+# Exclude specific files or directories using a regex
+black --exclude '/(\.venv|env)/' /path/to/directory
+# Include only specific files or directories using a regex
+black --include '.*_test.py' /path/to/directory
+# Run in quiet mode without output messages unless an error occurs
+black --quiet script.py
+# Automatically detect the target Python version (default behavior)
+black script.py
+# Specify a target Python version
+black --target-version py38 script.py
+# Only format files that were changed against a specific commit
+black --diff HEAD
+# Output a diff of what changes would be made
+black --diff script.py
+# Prevent writing back to files (use with --check or --diff)
+black --diff --check script.py
+ cheat:black
+---
+syntax: bash
+tags: [ python, development ]
+---
+# Formats the python code of the specified file or directory:
+black <path>
+# Checks if the code is already well-formatted:
+black --check <path>
+# Show the changes that would be applied to the code:
+black --diff <path>
+ tldr:black
+# black
+# A Python auto code formatter.
+# More information: <https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html>.
+# Auto-format a file or entire directory:
+black path/to/file_or_directory
+# Format the code passed in as a string:
+black -c "code"
+# Output whether a file or a directory would have changes made to them if they were to be formatted:
+black --check path/to/file_or_directory
+# Output changes that would be made to a file or a directory without performing them (dry-run):
+black --diff path/to/file_or_directory
+# Auto-format a file or directory, emitting exclusively error messages to `stderr`:
+black --quiet path/to/file_or_directory
+# Auto-format a file or directory without replacing single quotes with double quotes (adoption helper, avoid using this for new projects):
+black --skip-string-normalization path/to/file_or_directory

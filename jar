@@ -1,0 +1,29 @@
+cheat:jar
+---
+syntax: bash
+tags: [ java ]
+---
+# To archive all files in the current directory into a jar file:
+jar cf <file.jar> *
+# To create a jar file using a pre-existing manifest file:
+jar cfm <file.jar> <manifest_file> *
+# To extract all files from a jar file in the current directory:
+jar xf <file.jar>
+# To extract only certain files from a jar file:
+jar xf <file.jar> <file_to_extract>
+# To list the content of a jar file:
+jar tf <file.jar>
+# To list the content of a jar file with verbose output:
+jar tf <file.jar>
+ tldr:jar
+# jar
+# Java applications/libraries packager.
+# More information: <https://docs.oracle.com/javase/tutorial/deployment/jar/basicsindex.html>.
+# Recursively archive all files in the current directory into a .jar file:
+jar cf file.jar *
+# Unzip .jar/.war file to the current directory:
+jar -xvf file.jar
+# List a .jar/.war file content:
+jar tf path/to/file.jar
+# List a .jar/.war file content with verbose output:
+jar tvf path/to/file.jar

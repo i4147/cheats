@@ -1,0 +1,17 @@
+{--
+  - 404 NOT FOUND
+  -
+  - Unknown cheat sheet. Please try to reformulate your query.
+  - Query format:
+  --}
+ /LANG/QUESTION
+-- Examples:
+ /python/read+json
+ /golang/run+external+program
+ /js/regex+search
+{--
+  - See /:help for more info.
+  -
+  - If the problem persists, file a GitHub issue at
+  - github.com/chubin/cheat.sh or ping @igor_chubin
+  --}

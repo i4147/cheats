@@ -1,0 +1,56 @@
+# ss
+# Dump socket statistics for network connections.
+#
+# Options:
+#   -4/-6   list ipv4/ipv6 sockets
+#   -n      numeric addresses instead of hostnames
+#   -l      list listening sockets
+#   -u/-t/-x list udp/tcp/unix sockets
+#   -p      Show process(es) that using socket
+# Basic usage to display all sockets
+ss
+# List all TCP connections
+ss -t
+# List all UDP connections
+ss -u
+# Show listening sockets
+ss -l
+# Display summary statistics
+ss -s
+# Display all sockets, including those in established state
+ss -a
+# Show detailed information with numeric addresses
+ss -n
+# Filter sockets by state (e.g., LISTEN, ESTABLISHED)
+ss state LISTEN
+# Display sockets of a specific protocol (e.g., TCP)
+ss -t -a
+# Show sockets belonging to a specific user
+ss -u -p USER
+# Show sockets related to a specific process
+ss -p
+# Display IPv4 sockets
+ss -4
+# Display IPv6 sockets
+ss -6
+# Filter based on specific ports
+ss 'sport = :80' # source port 80
+ss 'dport = :22' # destination port 22
+# Combine filters for more refined results
+ss -t -a 'dport = :22' state ESTABLISHED
+# Show all listening TCP ports, including the corresponding process.
+ss -tlp
+# Show a summary of all ports connecting to 192.168.2.1 via port 80.
+ss -t dst 192.168.2.1:80
+# Show all SSH-related connection.
+#
+# Documentation on the filter syntax can be installed via the following command
+# if on a Debian- or Ubuntu-based distribution of Linux:
+#
+#     sudo apt-get install iproute2-doc
+#
+ss -t state established '( dport = :ssh or sport = :ssh )'
+# Display timer information.
+ss -tno
+# Filter connections by TCP state.
+ss -t4 state established

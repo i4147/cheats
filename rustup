@@ -1,0 +1,22 @@
+# rustup
+# The Rust toolchain installer and version manager.
+# Install the Rust toolchain
+rustup install stable
+# Update Rust toolchains and rustup itself
+rustup update
+# Show installed toolchains
+rustup toolchain list
+# Set the default Rust toolchain for the current user
+rustup default stable
+# Add a target for cross-compilation
+rustup target add wasm32-unknown-unknown
+# Remove a specific toolchain
+rustup toolchain remove nightly
+# Run a command with a specific toolchain
+rustup run nightly cargo build
+# Uninstall rustup and all Rust tools
+rustup self uninstall
+# Check for environment setup issues
+rustup doctor
+# Add a component to a toolchain
+rustup component add rustfmt

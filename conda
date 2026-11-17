@@ -1,0 +1,51 @@
+cheat:conda
+---
+tags: [ packaging ]
+---
+# To list environments
+conda env list
+# To initialise an environment
+conda create --name <environment_name>
+# To initialise an environment with python3.10
+conda create --name <environment_name> python=3.10
+# To install from a file
+conda install --file <requirements.txt>
+# To clone an environment
+conda create --clone <old_environment_name> --name <new_environment_name>
+# To activate a virtual environment
+conda activate <environment_name>
+# To deactivate a virtual environment
+conda deactivate
+# To remove an environment
+conda env remove --name <environment_name>
+# or
+conda env remove --prefix <path/to/env>
+# To list all packages in an environment
+conda list --name <environment_name>
+# To list packages in an activated environment
+conda list
+# To export an activated environment
+conda env export > <environment.yml>
+# To export an activated environment, listing only manually installed packages (no dependencies)
+conda env export --from-history > <environment.yml>
+ tldr:conda
+# conda
+# Package, dependency and environment management for any programming language.
+# Some subcommands such as `conda create` have their own usage documentation.
+# More information: <https://github.com/conda/conda>.
+# Create a new environment, installing named packages into it:
+conda create --name environment_name python=3.9 matplotlib
+# List all environments:
+conda info --envs
+# Load an environment:
+conda activate environment_name
+# Unload an environment:
+conda deactivate
+# Delete an environment (remove all packages):
+conda remove --name environment_name --all
+# Install packages into the current environment:
+conda install python=3.4 numpy
+# List currently installed packages in current environment:
+conda list
+# Delete unused packages and caches:
+conda clean --all

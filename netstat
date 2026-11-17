@@ -1,0 +1,64 @@
+cheat.sheets:netstat
+# netstat
+# Print network connections, routing tables, interface statistics, and more (deprecated).
+# Display all active Internet connections
+netstat -a
+# Show only listening ports
+netstat -l
+# Display statistics for each protocol
+netstat -s
+# Show routing table
+netstat -r
+# Display addresses in numeric form
+netstat -n
+# Display only TCP connections
+netstat -t
+# Display only UDP connections
+netstat -u
+# Display PID and program name for each connection
+netstat -p
+# Refresh netstat output every few seconds (e.g., every 1 second)
+netstat -c
+# Display multicast group memberships
+netstat -g
+ cheat:netstat
+---
+tags: [ networking ]
+---
+# WARNING ! netstat is deprecated. Look below.
+# To view which users/processes are listening to which ports:
+sudo netstat -lnptu
+# To view routing table (use -n flag to disable DNS lookups):
+netstat -r
+# Which process is listening to port <port>
+netstat -pln | grep <port> | awk '{print $NF}'
+# Example output: 1507/python
+# Fast display of ipv4 tcp listening programs
+sudo netstat -vtlnp --listening -4
+# WARNING ! netstat is deprecated.
+# Replace it by:
+ss
+# For netstat -r
+ip route
+# For netstat -i
+ip -s link
+# For netstat -g
+ip maddr
+ tldr:netstat
+# netstat
+# Displays network-related information such as open connections, open socket ports, etc.
+# More information: <https://man7.org/linux/man-pages/man8/netstat.8.html>.
+# List all ports:
+netstat --all
+# List all listening ports:
+netstat --listening
+# List listening TCP ports:
+netstat --tcp
+# Display PID and program names:
+netstat --program
+# List information continuously:
+netstat --continuous
+# List routes and do not resolve IP addresses to hostnames:
+netstat --route --numeric
+# List listening TCP and UDP ports (+ user and process if you're root):
+netstat --listening --program --numeric --tcp --udp --extend

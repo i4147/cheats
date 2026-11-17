@@ -1,0 +1,31 @@
+cheat.sheets:hostname
+# hostname
+# Show or set the system's host name.
+# Display the current hostname of the system
+hostname
+# Set a new hostname for the system (requires administrative privileges)
+sudo hostname new-hostname
+# Display the short hostname (without any domain information)
+hostname -s
+# Display the domain name of the system
+hostname -d
+# Display the fully qualified domain name (FQDN) of the system
+hostname -f
+# Display the IP address(es) of the host
+hostname -I
+# Display all network addresses of the host
+hostname -A
+ tldr:hostname
+# hostname
+# Show or set the system's host name.
+# More information: <https://manned.org/hostname>.
+# Show current host name:
+hostname
+# Show the network address of the host name:
+hostname -i
+# Show all network addresses of the host:
+hostname -I
+# Show the FQDN (Fully Qualified Domain Name):
+hostname --fqdn
+# Set current host name:
+hostname new_hostname

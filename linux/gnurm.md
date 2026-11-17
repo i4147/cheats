@@ -1,0 +1,4 @@
+# gnurm
+> This command is an alias of GNU `rm`.
+- View documentation for the original command:
+`tldr rm`

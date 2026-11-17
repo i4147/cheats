@@ -1,0 +1,31 @@
+cheat.sheets:htop
+# htop
+# Dynamic, real-time information about running processes
+# Start htop.
+htop
+# Start htop displaying only processes owned by given user.
+htop -u user_name
+# Refresh every 10 seconds.
+htop -d 10
+# While htop(1) is running, get help about interactive commands.
+?
+# While htop(1) is running, invert the sort order.
+I
+# While htop(1) is running, trace a process with strace.
+s
+ tldr:htop
+# htop
+# Display dynamic real-time information about running processes. An enhanced version of `top`.
+# More information: <https://htop.dev/>.
+# Start htop:
+htop
+# Start htop displaying processes owned by a specific user:
+htop --user username
+# Sort processes by a specified `sort_item` (use `htop --sort help` for available options):
+htop --sort sort_item
+# See interactive commands while running htop:
+?
+# Switch to a different tab:
+tab
+# Display help:
+htop --help

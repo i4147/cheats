@@ -1,0 +1,23 @@
+/* If it is an empty folder, try and add a placeholder file instead: */
+ cd /path/to/git/repo
+ touch lost+found/.gitkeep
+ git add lost+found/.gitkeep
+/*
+ * Then a `git clean -d` would not delete that folder (since it includes
+ * tracked content)
+ *
+ * Note: if you are sure you won't have to track anything in that folder,
+ * you can replace `.gitkeep` by a `.gitignore` (inside the `lost+found`
+ * folder, that you might have to create first with [`mklost+found`][1],
+ * depending on your file system).
+ * The content of that `.gitignore` would then be '`*`' (without the
+ * simple quotes). Source: [torek][2]'s [comment][3].
+ *
+ *   [1]: https://linux.die.net/man/8/mklost+found
+ *   [2]: https://stackoverflow.com/users/1256452/torek
+ *   [3]: https://stackoverflow.com/questions/45538735/how-to-keep-
+ * lostfound-directory-in-
+ * git/45539576?noredirect=1#comment78059214_45539576
+ *
+ * [VonC] [so/q/45538735] [cc by-sa 3.0]
+ */

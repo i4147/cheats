@@ -1,0 +1,27 @@
+# lvcreate
+# Create a new logical volume.
+# Create a logical volume with a specified size
+lvcreate -L 10G -n my_lv my_vg
+# Create a logical volume with a percentage of the total size of the volume group
+lvcreate -l 50%VG -n my_lv my_vg
+# Create a mirror logical volume with 2 copies
+lvcreate -m 1 -L 10G -n my_mirror_lv my_vg
+# Create a thin logical volume from a thin pool
+lvcreate -V 10G -T my_vg/my_pool -n my_thin_lv
+# Create a snapshot of an existing logical volume
+lvcreate -L 5G -s -n my_snapshot /dev/my_vg/my_lv
+# Create a striped logical volume
+lvcreate -i 2 -L 10G -n my_striped_lv my_vg
+# Create a logical volume with specific physical volumes
+lvcreate -L 10G -n my_pv_lv my_vg /dev/sda1 /dev/sdb1
+# Create a logical volume with a specific permission
+lvcreate -L 10G -n my_lv -p rw my_vg
+# Create a logical volume while specifying metadata size
+lvcreate --size 10G --name my_lv --poolmetadatasize 128M my_vg
+# Create a logical volume with zeroing of the first block
+lvcreate -Z y -L 10G -n my_lv my_vg
+# Clone LVM volume: test => testCopy
+lvconvert --type mirror --alloc anywhere -m1 /dev/mylv/test
+lvs -a -o +devices | grep -E "LV|test"
+# After Cpy%Sync is 100% finished:
+lvconvert --splitmirrors 1 --name testCopy /dev/rootvg/test

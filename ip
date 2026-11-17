@@ -1,0 +1,80 @@
+cheat.sheets:ip
+# ip
+# Show/manipulate routing, devices, policy routing and tunnels.
+# Display the current IP addresses and network interfaces
+ip addr show
+# Display the routing table
+ip route show
+# Add a new IP address to an interface
+ip addr add 192.168.1.100/24 dev eth0
+# Delete an IP address from an interface
+ip addr del 192.168.1.100/24 dev eth0
+# Bring an interface up
+ip link set dev eth0 up
+# Bring an interface down
+ip link set dev eth0 down
+# Show network interfaces and link status
+ip link show
+# Add a new default gateway
+ip route add default via 192.168.1.1
+# Delete the default gateway
+ip route del default
+# Flush all IP addresses on an interface
+ip addr flush dev eth0
+# Change the MAC address of an interface
+ip link set dev eth0 address 00:11:22:33:44:55
+# Show information about tunnels
+ip tunnel show
+# Shortcut: Show brief information about IP addresses and devices
+ip -brief addr show
+# Shortcut: Show brief information about link status
+ip -brief link show
+ cheat:ip
+---
+tags: [ networking ]
+---
+# To display all interfaces with addresses:
+ip addr
+# To take down / up the wireless adapter:
+ip link set dev wlan0 {up|down}
+# To set a static IP and netmask:
+ip addr add 192.168.1.100/32 dev eth0
+# To remove a IP from an interface:
+ip addr del 192.168.1.100/32 dev eth0
+# To remove all IPs from an interface:
+ip address flush dev eth0
+# To display all routes:
+ip route
+# To display all routes for IPv6:
+ip -6 route
+# To add default route via gateway IP:
+ip route add default via 192.168.1.1
+# To add route via interface:
+ip route add 192.168.0.0/24 dev eth0
+# To get the route used for an destination
+ip route get to 8.8.8.8
+# To change your mac address :
+ip link set dev eth0 address aa:bb:cc:dd:ee:ff
+# To view neighbors (using ARP and NDP):
+ip neighbor show
+ tldr:ip
+# ip
+# Show / manipulate routing, devices, policy routing and tunnels.
+# Some subcommands such as `ip address` have their own usage documentation.
+# More information: <https://www.man7.org/linux/man-pages/man8/ip.8.html>.
+# List interfaces with detailed info:
+ip address
+# List interfaces with brief network layer info:
+ip -brief address
+# List interfaces with brief link layer info:
+ip -brief link
+# Display the routing table:
+ip route
+# Show neighbors (ARP table):
+ip neighbour
+# Make an interface up/down:
+ip link set interface up/down
+# Add/Delete an IP address to an interface:
+ip addr add/del ip/mask dev interface
+# Add a default route:
+ip route add default via ip dev interface

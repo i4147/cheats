@@ -1,0 +1,37 @@
+cheat.sheets:cargo-bench
+# cargo-bench
+# Run benchmarks of a package using libtest crate.
+# Running all benchmarks for a package
+cargo bench
+# Running benchmarks for specific functions using a filter
+cargo bench --bench benchmark_name_filter
+# Running a benchmark in a specific package within a workspace
+cargo bench -p package_name
+# Running benchmarks without compiling the package dependencies
+cargo bench --no-run
+# Displaying additional output information during benchmark running
+cargo bench --verbose
+# Compiling benchmarks for the nightly Rust toolchain
+cargo +nightly bench
+# Running benchmarks for a specific benchmark target
+cargo bench --bench specific_benchmark_target_name
+ tldr:cargo-bench
+# cargo bench
+# Compile and execute benchmarks.
+# More information: <https://doc.rust-lang.org/cargo/commands/cargo-bench.html>.
+# Execute all benchmarks of a package:
+cargo bench
+# Don't stop when a benchmark fails:
+cargo bench --no-fail-fast
+# Compile, but don’t run benchmarks:
+cargo bench --no-run
+# Benchmark the specified benchmark:
+cargo bench --bench benchmark
+# Benchmark with the given profile (default: `bench`):
+cargo bench --profile profile
+# Benchmark all example targets:
+cargo bench --examples
+# Benchmark all binary targets:
+cargo bench --bins
+# Benchmark the package’s library:
+cargo bench --lib

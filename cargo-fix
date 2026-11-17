@@ -1,0 +1,27 @@
+cheat.sheets:cargo-fix
+# cargo-fix
+# Automatically fix common compiler warnings.
+# Automatically fix common compiler warnings in the current crate
+cargo fix
+# Automatically fix common compiler warnings but do not actually apply the fixes, just show what would be changed
+cargo fix --dry-run
+# Automatically fix warnings, including converting any 'allow(warnings)' to 'warn(warnings)'
+cargo fix --allow-dirty
+# Automatically fix warnings and apply suggested fixes for all targets (including tests and examples)
+cargo fix --all-targets
+ tldr:cargo-fix
+# cargo fix
+# Automatically fix lint warnings reported by `rustc`.
+# More information: <https://doc.rust-lang.org/cargo/commands/cargo-fix.html>.
+# Fix code even if it already has compiler errors:
+cargo fix --broken-code
+# Fix code even if the working directory has changes:
+cargo fix --allow-dirty
+# Migrate a package to the next Rust edition:
+cargo fix --edition
+# Fix the package’s library:
+cargo fix --lib
+# Fix the specified integration test:
+cargo fix --test name
+# Fix all members in the workspace:
+cargo fix --workspace

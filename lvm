@@ -1,0 +1,89 @@
+cheat.sheets:lvm
+# lvm
+# Activate the LVM2 command-line interface.
+# List all existing volume groups
+lvm vgs
+# Display detailed information about all physical volumes
+lvm pvs -v
+# Activate a specific logical volume
+lvm lvchange -ay /dev/VolumeGroupName/LogicalVolumeName
+# Deactivate a specific logical volume
+lvm lvchange -an /dev/VolumeGroupName/LogicalVolumeName
+# Create a new logical volume with a specified size
+lvm lvcreate -L 10G -n LogicalVolumeName VolumeGroupName
+# Resize an existing logical volume
+lvm lvresize -L +5G /dev/VolumeGroupName/LogicalVolumeName
+# Remove a logical volume
+lvm lvremove /dev/VolumeGroupName/LogicalVolumeName
+# Display detailed information about logical volumes
+lvm lvs -v
+# Extend a volume group by adding a physical volume
+lvm vgextend VolumeGroupName /dev/sdX
+# Create a new volume group
+lvm vgcreate VolumeGroupName /dev/sdX
+# Reduce a volume group by removing a physical volume
+lvm vgreduce VolumeGroupName /dev/sdX
+# Remove a volume group
+lvm vgremove VolumeGroupName
+ cheat:lvm
+# PV - physical volume (disc); eg. /dev/sda
+# VG - volume group; eg. vg0
+# LV - logical volume; eg. root
+# Create PV
+pvcreate /dev/sda
+# Display info about PV
+pvdisplay /dev/sda
+# Create VG
+vgcreate vg0 /dev/sda
+# Display info about VG
+vgdispay vg0
+# Add PV to VG, PV must be created before
+vgextend vg0 /dev/sdb
+# Remove PV from VG
+pvmove /dev/sdb         # Move data from PV
+vgreduce data /dev/sdb
+# Deactivate VG, do this when you want to physically remove device
+vgchange --activate n vg0
+# Create LV
+lvcreate --name root --size 8G vg0
+# Extend LV size
+lvextend --size 16G vg0/root
+# Reduce LV size, FS must be resized first!
+lvreduce --size 8G vg0/root
+# Remove LV
+lvremove vg0/root
+# Create mirrored LV (RAID1)
+lvcreate --name root --size 8G --mirrors 1 data vg0
+# Mirror logs are stored on third device by default - if you don't have 3 or
+# more devices in VG add '--mirrorlog core' to store logs in memory
+# Enable mirroring on existing LV
+lvconvert --mirrors 1 vg0/root
+# Create stripped LV (RAID0)
+lvcreate --name root --size 8G --stripes 2 --stripesize 4 vg0
+#Exclusive Activation of a Volume Group in a Cluster
+#Link --> https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/High_Availability_Add-On_Administration/s1-exclusiveactive-HAAA.html
+1> vgs --noheadings -o vg_name
+2> volume_list = [ "rhel_root", "rhel_home" ]
+3> dracut -H -f /boot/initramfs-$(uname -r).img $(uname -r)
+4> Reboot the node
+5> uname -r to verify the correct initrd image
+ tldr:lvm
+# lvm
+# Manage physical volumes, volume groups, and logical volumes using the Logical Volume Manager (LVM) interactive shell.
+# More information: <https://man7.org/linux/man-pages/man8/lvm.8.html>.
+# Start the Logical Volume Manager interactive shell:
+sudo lvm
+# List the Logical Volume Manager commands:
+sudo lvm help
+# Initialize a drive or partition to be used as a physical volume:
+sudo lvm pvcreate /dev/sdXY
+# Display information about physical volumes:
+sudo lvm pvdisplay
+# Create a volume group called vg1 from the physical volume on `/dev/sdXY`:
+sudo lvm vgcreate vg1 /dev/sdXY
+# Display information about volume groups:
+sudo lvm vgdisplay
+# Create a logical volume with size 10G from volume group vg1:
+sudo lvm lvcreate -L 10G vg1
+# Display information about logical volumes:
+sudo lvm lvdisplay

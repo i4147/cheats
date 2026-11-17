@@ -1,0 +1,42 @@
+cheat:gem
+---
+tags: [ packaging, ruby ]
+---
+# To search for a package:
+gem search <package>
+# To install a package:
+gem install <package>
+# To install a package in user space:
+gem install --user-install <package>
+# To install specific version of a package:
+gem install <package> -v <version>
+# To uninstall a package:
+gem uninstall <package>
+# To upgrade a package:
+gem update <package>
+# To show details of a package:
+gem info <package>
+# To list local packages:
+gem list --local
+# To show help on command:
+gem help <command>
+ tldr:gem
+# gem
+# Interact with the package manager for the Ruby programming language.
+# More information: <https://rubygems.org>.
+# Search for remote gem(s) and show all available versions:
+gem search regular_expression --all
+# Install the latest version of a gem:
+gem install gemname
+# Install specific version of a gem:
+gem install gemname --version 1.0.0
+# Install the latest matching (SemVer) version of a gem:
+gem install gemname --version '~> 1.0'
+# Update a gem:
+gem update gemname
+# List all local gems:
+gem list
+# Uninstall a gem:
+gem uninstall gemname
+# Uninstall specific version of a gem:
+gem uninstall gemname --version 1.0.0

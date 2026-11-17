@@ -1,0 +1,40 @@
+cheat:gh
+---
+syntax: bash
+tags: [ git, github, vcs ]
+---
+# View README.md:
+gh repo view
+# View issue list:
+gh issue list
+# View specific issue (e.g., the first being #1):
+gh issue view 1
+# Create issue (start an interactive CLI):
+gh issue create
+# Create pull request from a feature branch (start an interactive CLI):
+gh pr create
+# Create a public gist and open web browser to it:
+gh gist create hello.py -d "my Hello-World program in Python" -w -p
+# Create a custom label for issues and prs
+gh label create do-not-merge
+ tldr:gh
+# gh
+# Work seamlessly with GitHub from the command-line.
+# Some subcommands such as `gh config` have their own usage documentation.
+# More information: <https://cli.github.com/>.
+# Clone a GitHub repository locally:
+gh repo clone owner/repository
+# Create a new issue:
+gh issue create
+# View and filter the open issues of the current repository:
+gh issue list
+# View an issue in the default web browser:
+gh issue view --web issue_number
+# Create a pull request:
+gh pr create
+# View a pull request in the default web browser:
+gh pr view --web pr_number
+# Check out a specific pull request locally:
+gh pr checkout pr_number
+# Check the status of a repository's pull requests:
+gh pr status

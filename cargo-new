@@ -1,0 +1,22 @@
+cheat.sheets:cargo-new
+# cargo-new
+# Create a new Cargo package in a new directory.
+# Create a new binary package
+cargo new my_project
+# Create a new library package
+cargo new --lib my_library
+# Initialize a new cargo package with a VCS
+cargo new my_project --vcs git
+# Initialize a new cargo package without a VCS
+cargo new my_project --vcs none
+# Specify the edition for the new package
+cargo new my_project --edition 2021
+# Create a new package with a specified author
+cargo new my_project --author "Your Name <email@example.com>"
+ tldr:cargo-new
+# cargo new
+# Create a new Cargo package.
+# Equivalent of `cargo init`, but specifying a directory is required.
+# More information: <https://doc.rust-lang.org/cargo/commands/cargo-new.html>.
+# Create a new Rust project with a binary target:
+cargo new path/to/directory

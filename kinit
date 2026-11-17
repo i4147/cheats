@@ -1,0 +1,38 @@
+cheat.sheets:kinit
+# kinit
+# Obtain and cache an initial ticket-granting ticket for Kerberos authentication.
+# Obtain an initial ticket-granting ticket
+kinit
+# Obtain a ticket for a specific principal
+kinit username@REALM
+# Specify a different cache file for the ticket
+kinit -c /path/to/credentials_cache
+# Obtain a ticket with a specific lifetime (e.g., 10 hours)
+kinit -l 10h
+# Obtain a renewable ticket with a specific renewal lifetime (e.g., 7 days)
+kinit -r 7d
+# Use a specific keytab file to authenticate
+kinit -k -t /path/to/keytab_file
+# Use a password from a file instead of prompting
+kinit < username.passfile
+# Obtain tickets silently (no password prompt, useful for scripts)
+kinit -s
+# Obtain a ticket for the default principal and verify it immediately
+kinit && klist -s
+ tldr:kinit
+# kinit
+# Authenticate a principal with a Kerberos server to gain and cache a ticket.
+# Note: A Kerberos principal can be either a user, service, or application.
+# More information: <https://web.mit.edu/kerberos/krb5-1.12/doc/user/user_commands/kinit.html>.
+# Authenticate a user and obtain a ticket-granting ticket:
+kinit username
+# Renew a ticket-granting ticket:
+kinit -R
+# Specify a lifetime for the ticket:
+kinit -l 5h
+# Specify a total renewable lifetime for the ticket:
+kinit -r 1w
+# Specify a different principal name to authenticate as:
+kinit -p principal@REALM
+# Specify a different keytab file to authenticate with:
+kinit -t path/to/keytab

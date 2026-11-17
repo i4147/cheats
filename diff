@@ -1,0 +1,37 @@
+cheat:diff
+# To view the differences between two files:
+diff -u <file-1> <file-2>
+# To view the differences between two directories:
+diff -ur <dir-1> <dir-2>
+# To ignore whitespace:
+diff -ub <file-1> <file-2>
+# To ignore blank lines:
+diff -uB <file-1> <file-2>
+# To ignore the differences between uppercase and lowercase:
+diff -ui <file-1> <file-2>
+# To report whether the files differ:
+diff -q <file-1> <file-2>
+# To report whether the files are identical:
+diff -s <file-1> <file-2>
+# To diff the output of two commands or scripts:
+diff <(command1) <(command2)
+# To generate a patch file from two files:
+diff -Naur <file-1> <file-2> > <patch-file>
+ tldr:diff
+# diff
+# Compare files and directories.
+# More information: <https://man7.org/linux/man-pages/man1/diff.1.html>.
+# Compare files (lists changes to turn `old_file` into `new_file`):
+diff old_file new_file
+# Compare files, ignoring white spaces:
+diff --ignore-all-space old_file new_file
+# Compare files, showing the differences side by side:
+diff --side-by-side old_file new_file
+# Compare files, showing the differences in unified format (as used by `git diff`):
+diff --unified old_file new_file
+# Compare directories recursively (shows names for differing files/directories as well as changes made to files):
+diff --recursive old_directory new_directory
+# Compare directories, only showing the names of files that differ:
+diff --recursive --brief old_directory new_directory
+# Create a patch file for Git from the differences of two text files, treating nonexistent files as empty:
+diff --text --unified --new-file old_file new_file > diff.patch

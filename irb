@@ -1,0 +1,13 @@
+cheat.sheets:irb
+# irb
+# Interactive ruby. A tool to interactively execute Ruby expressions
+# read from stdin.
+# Start irb
+irb
+ tldr:irb
+# irb
+# Interactive Ruby shell.
+# Evaluate Ruby code read from `stdin`.
+# More information: <https://docs.ruby-lang.org/en/master/IRB.html>.
+# Start the interactive shell:
+irb

@@ -1,0 +1,30 @@
+cheat:gcc
+# To compile a file:
+gcc file.c
+# To compile a file with a custom output:
+gcc -o file file.c
+# debug symbols:
+gcc -g
+# debug with all symbols:
+gcc -ggdb3
+# To build for 64 bits:
+gcc -m64
+# Include the directory {/usr/include/myPersonnal/lib/} to the list of path for #include <....>
+# With this option, no warning / error will be reported for the files in {/usr/include/myPersonnal/lib/}
+gcc -isystem /usr/include/myPersonnal/lib/
+# To build a GUI for windows (Mingw) (Will disable the term/console):
+gcc -mwindows
+ tldr:gcc
+# gcc
+# Preprocess and compile C and C++ source files, then assemble and link them together.
+# More information: <https://gcc.gnu.org>.
+# Compile multiple source files into an executable:
+gcc path/to/source1.c path/to/source2.c ... -o path/to/output_executable
+# Show common warnings, debug symbols in output, and optimize without affecting debugging:
+gcc path/to/source.c -Wall -g -Og -o path/to/output_executable
+# Include libraries from a different path:
+gcc path/to/source.c -o path/to/output_executable -Ipath/to/header -Lpath/to/library -llibrary_name
+# Compile source code into Assembler instructions:
+gcc -S path/to/source.c
+# Compile source code into an object file without linking:
+gcc -c path/to/source.c

@@ -1,0 +1,33 @@
+cheat.sheets:bmon
+# bmon
+# Visualize and monitor network bandwidth utilization.
+# Launch bmon to monitor all interfaces
+bmon
+# Monitor a specific network interface (e.g., eth0)
+bmon -p eth0
+# Display human-readable bit and byte rates
+bmon -b
+# Limit the history data to a specific number of seconds (e.g., 10 seconds)
+bmon -H 10
+# Set the update interval to refresh data every n seconds (e.g., 2 seconds)
+bmon -R 2
+# Display specific output with desired information (e.g., overview and details)
+bmon -o 'ascii:overview,details'
+# Specify the maximum history size (e.g., 100 entries)
+bmon -M 100
+# Use JSON output plugin (useful for scripting and automation)
+bmon -o json
+# Filter display for interfaces matching a regex pattern (e.g., only include devices starting with 'eth')
+bmon -f 'eth.*'
+ tldr:bmon
+# bmon
+# Monitor bandwidth and capture network related statistics.
+# More information: <https://github.com/tgraf/bmon>.
+# Display the list of all the interfaces:
+bmon -a
+# Display data transfer rates in bits per second:
+bmon -b
+# Set policy to define which network interface(s) is/are displayed:
+bmon -p interface_1,interface_2,interface_3
+# Set interval (in seconds) in which rate per counter is calculated:
+bmon -R 2.0

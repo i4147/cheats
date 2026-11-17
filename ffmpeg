@@ -1,0 +1,77 @@
+cheat.sheets:ffmpeg
+# ffmpeg
+# Tools for transcoding, streaming and playing of multimedia files
+# Convert IN_FILE to OUT_FILE, based on its extension. So, if your IN_FILE has
+# the `.mp3` extension and your OUT_FILE has the `.ogg` extension, then your
+# file will be converted -- but original kept in-tact -- to an OGG file.
+ffmpeg -i IN_FILE OUT_FILE
+# Remove the original upon successful completion of ffmpeg(1).
+ffmpeg -i IN_FILE OUT_FILE && rm -v IN_FILE
+# Convert all MP3s in the CWD to OGGs, deleting the originals when successfully
+# converted. This will be a huge time-saver! Note that this is Bash syntax.
+# By the way, this example works non-recursively.
+for File in *.mp3; { [ -f "$File" ] || continue; ffmpeg -i "$File" "${File%.mp3}.ogg" && rm -v "$File"; }
+# Obviously ffmpeg(1) works with audio files, but it can also work on images.
+# This example will convert a JPEG image to the PNG format.
+ffmpeg -i ImageFile.jpg ImageFile.png
+# By default, ffmpeg(1) is really verbose, so shut it up, displaying only the
+# more important information, by using the `-v` flag, followed by its `0`
+# argument; this argument means that only 'panic' messages will be shown. Refer
+# to the ffmpeg(1) man page for more information on these levels of logging.
+ffmpeg -v 0 -i IN_FILE OUT_FILE
+# If you want to see ongoing but not over-the-top statistics for the file on
+# which ffmpeg(1) is currently working, you can make use of the `-stats` flag.
+ffmpeg -stats -i IN_FILE OUT_FILE
+ cheat:ffmpeg
+# To print file metadata:
+ffmpeg -i <file>
+# To convert all m4a files to mp3
+for f in *.m4a; do ffmpeg -i "$f" -acodec libmp3lame -vn -b:a 320k "${f%.m4a}.mp3"; done
+# To convert video from .foo to .bar
+# -g : GOP, for searchability
+ffmpeg -i input.foo -vcodec bar -acodec baz -b:v 21000k -b:a 320k -g 150 -threads 4 output.bar
+# To convert image sequence to video:
+ffmpeg -r 18 -pattern_type glob -i '*.png' -b:v 21000k -s hd1080 -vcodec vp9 -an -pix_fmt yuv420p -deinterlace output.ext
+# To combine video and audio into one file
+ffmpeg -i video.ext -i audio.ext -c:v copy -c:a copy output.ext
+# To add ass subtitle to the video
+ffmpeg -i input_video.mp4 -vf ass=sub.ass output_video_subtitles.mp4
+# To convert webm to mp4
+ffmpeg -i input_video.webm output_video.mp4
+# To convert mp4 to mov
+ffmpeg -i input_video.mp4 -acodec copy -vcodec copy -f mov output_video.mov
+# To convert mov to mp4
+ffmpeg -i input_video.mov -vcodec copy -acodec copy output_video.mp4
+# Listen to 10 seconds of audio from a video file
+#
+# -ss : start time
+# -t  : seconds to cut
+# -autoexit : closes ffplay as soon as the audio finishes
+ffmpeg -ss 00:34:24.85 -t 10 -i path/to/file.mp4 -f mp3 pipe:play | ffplay -i pipe:play -autoexit
+# To combine audio and video from N files:
+# See also https://stackoverflow.com/questions/7333232/how-to-concatenate-two-mp4-files-using-ffmpeg
+cat mylist.txt
+file '/path/to/file1'
+file '/path/to/file2'
+file '/path/to/file3'
+ffmpeg -f concat -safe 0 -i mylist.txt -c copy output.mp4
+ tldr:ffmpeg
+# ffmpeg
+# Video conversion tool.
+# More information: <https://ffmpeg.org>.
+# Extract the sound from a video and save it as MP3:
+ffmpeg -i video.mp4 -vn sound.mp3
+# Save a video as GIF, scaling the height to 1000px and setting framerate to 15:
+ffmpeg -i video.mp4 -vf 'scale=-1:1000' -r 15 output.gif
+# Combine numbered images (`frame_1.jpg`, `frame_2.jpg`, etc) into a video or GIF:
+ffmpeg -i frame_%d.jpg -f image2 video.mpg|video.gif
+# Quickly extract a single frame from a video at time mm:ss and save it as a 128x128 resolution image:
+ffmpeg -ss mm:ss -i video.mp4 -frames 1 -s 128x128 -f image2 image.png
+# Trim a video from a given start time mm:ss to an end time mm2:ss2 (omit the -to flag to trim till the end):
+ffmpeg -ss mm:ss -to mm2:ss2 -i video.mp4 -codec copy output.mp4
+# Convert AVI video to MP4. AAC Audio @ 128kbit, h264 Video @ CRF 23:
+ffmpeg -i input_video.avi -codec:a aac -b:a 128k -codec:v libx264 -crf 23 output_video.mp4
+# Remux MKV video to MP4 without re-encoding audio or video streams:
+ffmpeg -i input_video.mkv -codec copy output_video.mp4
+# Convert MP4 video to VP9 codec. For the best quality, use a CRF value (recommended range 15-35) and -b:v MUST be 0:
+ffmpeg -i input_video.mp4 -codec:v libvpx-vp9 -crf 30 -b:v 0 -codec:a libopus -vbr on -threads number_of_threads output_video.webm

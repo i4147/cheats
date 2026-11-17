@@ -1,0 +1,242 @@
+--------
+abap
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+algol
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+algol_nu
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+arduino
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+autumn
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+borland
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+bw
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+colorful
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+default
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+emacs
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+friendly
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+fruity
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+igor
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+lovelace
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+manni
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+monokai
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+murphy
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+native
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+paraiso-dark
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+paraiso-light
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+pastie
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+perldoc
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+rainbow_dash
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+rrt
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+tango
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+trac
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+vim
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+vs
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+--------
+xcode
+--------
+# basic loop
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  echo $i
+done
+------------------------------------
+You can test color styles with other cheat sheets using this script:
+    c="python/Advanced"
+    for s in $(curl -s cheat.sh/:styles); do
+      echo
+      echo --------
+      echo $s
+      echo --------
+      curl -s cheat.sh/$c?style=$s | head -5
+    done

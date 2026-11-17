@@ -1,0 +1,17 @@
+cheat.sheets:colrm
+# colrm
+# Remove columns from a file or STDIN
+# Remove the first, second, third, and fourth column.
+colrm 1 4 [FILE]
+# Same approach as the above, but via STDIN.
+printf 'Some of this is omitted.' | colrm 1 4
+ tldr:colrm
+# colrm
+# Remove columns from `stdin`.
+# More information: <https://manned.org/colrm>.
+# Remove first column of `stdin`:
+colrm 1 1
+# Remove from 3rd column till the end of each line:
+colrm 3
+# Remove from the 3rd column till the 5th column of each line:
+colrm 3 5

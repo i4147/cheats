@@ -1,0 +1,23 @@
+cheat.sheets:function
+# Abort the whole script from a function
+#
+trap "exit 1" TERM
+export TOP_PID=$$
+#
+function fatal()
+{
+  echo "Goodbye"
+  kill -s TERM $TOP_PID
+}
+#
+echo "Function call will abort"
+echo $(func)
+echo "This will never be printed"
+ tldr:function
+# function
+# Define a function.
+# More information: <https://www.gnu.org/software/bash/manual/bash.html#Shell-Functions>.
+# Define a function with the specified name:
+function func_name { echo "Function contents here"; }
+# Run a function named `func_name`:
+func_name
